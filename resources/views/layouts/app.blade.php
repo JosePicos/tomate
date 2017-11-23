@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    
-        <!-- Styles -->
-        <link href="{{asset('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')}}" rel="stylesheet">
-        <link href="{{asset('https://fonts.googleapis.com/css?family=Merriweather')}}" rel="stylesheet">
-        <link href="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}" rel="stylesheet"> 
-        <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/frequisicion.css') }}" rel="stylesheet">
-    </head>
-    <body>
-         <div id="app">
-            <nav class="navbar navbar-default navbar-static-top">
+    <!-- Styles -->
+    <link href="{{asset('css/Estilos.css')}}" rel="stylesheet">  
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{asset('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}" rel="stylesheet">
+    <link href="{{asset('fonts.css')}}" rel="stylesheet"> 
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+    <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
+
+</head>
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top">
+            
                 <div class="nav-xbootstrap">
                     <ul>
                         <li><a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a></li>
