@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('requisicion');
+    return view('surtido');
 });
 
 Auth::routes();
