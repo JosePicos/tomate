@@ -48,6 +48,11 @@
               <label>Municipio/Provincia</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
+            <div class="form-group col-lg-1">
+              <label></label>
+              <button type="submit" class=" form-control btn btn-primary">Buscar</button>
+            </div>
+            </div>
             <!--COLONIA -->
             <div class="form-group col-lg-6">
               <label>Colonia</label>
@@ -72,10 +77,34 @@
               <label></label>
               <button type="submit" class=" form-control btn btn-primary">Buscar</button>
             </div>
+
+            <div class="panel-heading">Surtido de Requisicion </div>
+                     <table class="table table-striped table-hover dark-grey">
+                <thead>
+                    <tr>
+                       
+                        <th>ID</th>
+                        <th>Descripcion</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="activate">
+                     
+                        <td>1</td>
+                        <td>Jose Luis Osuna</td>
+                        <td>Mexico</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+                </div>
+                <div class="form-group col-lg-2">
+              <label></label>
+              <button type="submit" class=" form-control btn btn-success">Guardar</button>
+            </div>
             </div>
           </div>
-        </section>
       </div>
     </div>
-</div>
 @endsection
