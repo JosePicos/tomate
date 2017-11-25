@@ -32,7 +32,7 @@
                         @else
                         <li>
                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="glyphicon glyphicon-chevron-down iconsize"></span>
+                                    {{ Auth::user()->nombre }} <span class="glyphicon glyphicon-chevron-down iconsize"></span>
                             </a>
                             <ul class="dropdown">
                                 <li>
@@ -52,7 +52,7 @@
                         @if (Auth::check())
                         <li><a href="javascript:void(0)">REQUISICIÓN<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
-                                <li><a href=" ">Alta Requisición</a></li>
+                                <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                                 <li><a href=" ">Monitoreo de Requisición</a></li>
                             </ul>
                         </li>
