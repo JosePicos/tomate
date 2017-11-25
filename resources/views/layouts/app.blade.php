@@ -58,7 +58,7 @@
                         </li>
                          <li><a href="javascript:void(0)">CATÁLOGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
-                                <li><a href=" ">Productos</a></li>
+                                <li><a href="{{ route('Producto.index') }}">Productos</a></li>
                                 <li><a href=" ">Empleados</a></li>
                             </ul>
                         </li>
