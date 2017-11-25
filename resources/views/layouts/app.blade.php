@@ -32,7 +32,7 @@
                         @else
                         <li>
                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="glyphicon glyphicon-chevron-down iconsize"></span>
+                                    {{ Auth::user()->nombre }} <span class="glyphicon glyphicon-chevron-down iconsize"></span>
                             </a>
                             <ul class="dropdown">
                                 <li>
