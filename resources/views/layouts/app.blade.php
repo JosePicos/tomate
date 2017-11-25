@@ -56,7 +56,7 @@
                                 <li><a href=" ">Monitoreo de Requisición</a></li>
                             </ul>
                         </li>
-                         <li><a href="javascript:void(0)">CATALAGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+                         <li><a href="javascript:void(0)">CATÁLOGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
                                 <li><a href=" ">Productos</a></li>
                                 <li><a href=" ">Empleados</a></li>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="nav-bg-xbootstrap">
                    <div class="navbar-xbootstrap"> <span></span> <span></span> <span></span> </div>
-                   <a href="{{ route('home') }}" class="title-mobile">PYMES FACTUR-E</a>
+                   <a href="{{ route('home') }}" class="title-mobile">TOMATE</a>
                 </div>    
             </nav>
     @yield('content')
