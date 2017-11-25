@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
 
 Route::resource('/Producto', 'ProductosController');
+
+Route::resource('/Empleado', 'EmpleadosController');
