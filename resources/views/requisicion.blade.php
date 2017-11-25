@@ -78,7 +78,6 @@
               <button type="submit" class=" form-control btn btn-primary">Buscar</button>
             </div>
 
-            <div class="panel-heading">Surtido de Requisicion </div>
                      <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
