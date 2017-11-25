@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('requisicion');
+    return view('home');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
