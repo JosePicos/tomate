@@ -59,13 +59,12 @@
                          <li><a href="javascript:void(0)">CATALAGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
                                 <li><a href=" ">Productos</a></li>
+                                <li><a href=" ">Empleados</a></li>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" >Surtir Requisición<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                         </li>
                         @else
-                        <li><a href=" " >PROMOCIONES<span class=" "></span></a>        
-                        </li>
                         <li><a href="javascript:void(0)" >QUIENES SOMOS?<span class=" "></span></a>        
                         </li>
                         <li><a href="javascript:void(0)" >CONTACTANOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
