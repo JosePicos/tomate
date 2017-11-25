@@ -1,109 +1,49 @@
 @extends('layouts.app')
-@section('content')
-<div class="col-md-12 col-md-offset dark-grey">
-      <div class="panel-body">
-        <div class="container-fluid">
-        <section class="container">
-          <div class="container-page">        
-            <div class="col-md-12">
-              <h3 class="dark-grey">Registro Requisicion</h3>
-            <!-- Folio de la factura no editable -->
-            <div class="form-group col-lg-2">
-              <label>Folio</label>
-              <input type="folio" name="" class="form-control" id="" value="">
-            </div>
-            <!-- FECHA NO EDITABLE -->
-            <div class="form-group col-lg-4">
-              <label>Fecha</label>
-              <input type="feha" name="" class="form-control" id="" value="">
-            </div>
-            <div class="form-group col-lg-2">
-              <label>Pioridad</label>
-                <select type="uso" name="" class="form-control" id="" value="" >
-                  <option value="Tacos" >Normal</option>
-                  <option>Urgente</option>
-                </select>
-            </div>
-            <!-- DIRECCION -->
-            <div class="form-group col-lg-12">
-              <label>Direccion</label>
-            </div>
-            <!-- CODIGO POSTAL -->
-            <div class="form-group col-lg-2">
-              <label>Codigo Postal</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!--CALLE -->
-            <div class="form-group col-lg-2">
-              <label>Pais</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!--COLONIA -->
-            <div class="form-group col-lg-2">
-              <label>Estado</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!-- NUMERO INTERIOR -->
-            <div class="form-group col-lg-2">
-              <label>Municipio/Provincia</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <div class="form-group col-lg-1">
-              <label></label>
-              <button type="submit" class=" form-control btn btn-primary">Buscar</button>
-            </div>
-            </div>
-            <!--COLONIA -->
-            <div class="form-group col-lg-6">
-              <label>Colonia</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!--LOCALIDAD -->
-            <div class="form-group col-lg-4">
-              <label>Calle</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!--ESTADO -->
-            <div class="form-group col-lg-2">
-              <label>Numero</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-            <!-- CODIGO POSTAL -->
-            <div class="form-group col-lg-2">
-              <label>Producto</label>
-              <input type="uso" name="" class="form-control" id="" value="">
-            </div>
-             <div class="form-group col-lg-2">
-              <label></label>
-              <button type="submit" class=" form-control btn btn-primary">Buscar</button>
-            </div>
 
+@section('content')
+<div class="container">
+    <div class="row">
+         <div class="container-fluid">
+        <div class="col-md-12 col-md-offset dark-grey">
+            <div class="panel panel-default">
+                <div class="panel-heading">Empleados</div>
                      <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
                        
                         <th>ID</th>
-                        <th>Descripcion</th>
-                        <th>Cantidad</th>
+                        <th>Nombre</th>
+                        <th>Puesto</th>
+                        <th>Status</th>
+                       
+                        <th><button type="submit" class=" form-control btn btn-success">Nuevo</button></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="activate">
+                    <tr class="danger">
                      
                         <td>1</td>
-                        <td>Jose Luis Osuna</td>
-                        <td>Mexico</td>
+                        <td>Jose Luis</td>
+                        <td>Administrador</td>
+                        <td></td>
+                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                       
+                    </tr>
+                    <tr class="activate">
+                        
+                         <td>2</td>
+                        <td>Adan</td>
+                        <td>Encargado de Bodega</td>
+                        <td>Vigente</td>
+                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                      
                     </tr>
                     
                 </tbody>
             </table>
                 </div>
-                <div class="form-group col-lg-2">
-              <label></label>
-              <button type="submit" class=" form-control btn btn-success">Guardar</button>
             </div>
-            </div>
-          </div>
-      </div>
+        </div>
     </div>
+</div>
 @endsection

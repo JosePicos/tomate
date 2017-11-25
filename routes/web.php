@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('productos');
+    return view('home');
 });
 
 Auth::routes();
