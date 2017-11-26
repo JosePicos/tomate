@@ -13,8 +13,7 @@
                         <th>ID</th>
                         <th>Descripción</th>
                         <th>Dias Madurez</th>
-                        <th>Status</th>
-                        <th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal"> Abrir modal</button></th>
+                        <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevo"> Nuevo</button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -23,8 +22,7 @@
                         <td>1</td>
                         <td>Tomate Cherry</td>
                         <td>20</td>
-                        <td>Vigente</td>
-                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar" >Modificar</button></td>
                        
                     </tr>
                     <tr class="activate">
@@ -32,8 +30,7 @@
                          <td>2</td>
                         <td>Tomate Bola</td>
                         <td>15</td>
-                        <td>Vigente</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar" >Modificar</button></td>
                       
                     </tr>
                     
@@ -44,7 +41,7 @@
         </div>
     </div>
 </div>
-
 @include('productos.nuevo')
+@include('productos.editar')
 @endsection
 
