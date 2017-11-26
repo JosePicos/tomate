@@ -11,9 +11,9 @@
         </div>
         <div class="modal-body">
           <div class="form-group"> 
-          <div class="form-group col-lg-2">
+            <div class="form-group col-lg-2">
               <label>ID</label>
-              <input type="folio" name="" class="form-control" id="" value="">
+              <input type="" name="" class="form-control" id="" value="">
             </div>
             <!-- FECHA NO EDITABLE -->
             <div class="form-group col-lg-6">
