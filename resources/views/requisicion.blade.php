@@ -15,7 +15,7 @@
             <!-- FECHA NO EDITABLE -->
             <div class="form-group col-lg-4">
               <label>Fecha</label>
-              <input type="feha" name="" class="form-control" id="" value="">
+              <input type="date" name="" class="form-control" id="" value="">
             </div>
             <div class="form-group col-lg-2">
               <label>Pioridad</label>
