@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row">
@@ -16,7 +15,7 @@
                         <th>Dias Madurez</th>
                         <th>Status</th>
                        
-                        <th><button  type="submit" class=" form-control btn btn-success" data-toggle="modal" data-target="#editar">Nuevo</button></th>
+                        <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></th>
                     </tr>
                 </thead>
                 <tbody>
