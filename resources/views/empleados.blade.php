@@ -14,9 +14,8 @@
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Puesto</th>
-                        <th>Status</th>
-                       
-                        <th><button type="submit" class=" form-control btn btn-success">Nuevo</button></th>
+                        <th>Fecha Alta</th>
+                        <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alta"> Alta</button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -26,7 +25,7 @@
                         <td>Jose Luis</td>
                         <td>Administrador</td>
                         <td></td>
-                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar">Modificar</button></td>
                        
                     </tr>
                     <tr class="activate">
@@ -34,8 +33,8 @@
                          <td>2</td>
                         <td>Adan</td>
                         <td>Encargado de Bodega</td>
-                        <td>Vigente</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Modificar</button></td>
+                        <td></td>
+                          <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar">Modificar</button></td>
                       
                     </tr>
                     
@@ -46,4 +45,6 @@
         </div>
     </div>
 </div>
+@include('empleado.nuevo')
+@include('empleado.editar')
 @endsection
