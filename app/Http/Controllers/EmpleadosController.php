@@ -23,14 +23,14 @@ class EmpleadosController extends Controller
 
     public function update($Empleado, Request $datos)
     {
-    	Empleado::actualizar($producto, $datos);
+    	Empleado::actualizar($Empleado, $datos);
     	Session::flash('mensaje', 'Datos del empleado ctualizados correctamente');
     	return back();	
     }
 
     public function destroy($Empleado)
     {
-		Empleado::eliminar($producto);
+		Empleado::eliminar($Empleado);
 		Session::flash('mensaje', 'Empleado eliminado exitosamente');
     }
 }

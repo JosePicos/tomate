@@ -23,14 +23,14 @@ class ProductosController extends Controller
 
     public function update($Producto, Request $datos)
     {
-    	Producto::actualizar($producto, $datos);
+    	Producto::actualizar($Producto, $datos);
     	Session::flash('mensaje', 'Datos del producto actualizados correctamente');
     	return back();	
     }
 
     public function destroy($Producto)
     {
-		Producto::eliminar($producto);
+		Producto::eliminar($Producto);
 		Session::flash('mensaje', 'Producto eliminado exitosamente');
     }
 }
