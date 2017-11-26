@@ -19,6 +19,6 @@ class Clasificaciones extends Seeder
                         array('id' => 3, 'nombre' => 'Clasificación 3', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
                         array('id' => 4, 'nombre' => 'Clasificación 4', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
                     );
-        Clasificacion::insert($bodegas);
+        Clasificacion::insert($clasificaciones);
     }
 }
