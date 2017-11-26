@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function quienes (){
+        return view ('presentacion.quienessomos');
+
+    }
+      public function contacto (){
+        return view ('presentacion.contacto');
+
+    }
 }
