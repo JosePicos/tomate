@@ -13,8 +13,15 @@ class CreateDomicilioClientesTable extends Migration
      */
     public function up()
     {
-        Schema::create('domicilio_clientes', function (Blueprint $table) {
+        Schema::create('domicilios_clientes', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_cte')->unsigned();
+            $table->foreign('id_cte')->references('id')->on('clientes')->onDelete('restrict');
+            $table->string('pais', 50);
+            $table->string('municipio', 100);
+            $table->string('codigo_postal', 10);
+            $table->string('calle', 50);
+            $table->string('numero', 50);
             $table->timestamps();
         });
     }
@@ -26,6 +33,6 @@ class CreateDomicilioClientesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('domicilio_clientes');
+        Schema::dropIfExists('domicilios_clientes');
     }
 }
