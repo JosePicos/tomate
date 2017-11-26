@@ -13,4 +13,24 @@ class ProductosController extends Controller
 		 $productos = Producto::all();
 		 return view('productos', compact('productos'));    	
     }
+
+    public function store(Request $datos)
+    {
+    	Producto::guardar($datos);
+    	Session::flash('mensaje', 'Producto guardado exitosamente');
+    	return back();
+    }
+
+    public function update($Producto, Request $datos)
+    {
+    	Producto::actualizar($producto, $datos);
+    	Session::flash('mensaje', 'Datos del producto actualizados correctamente');
+    	return back();	
+    }
+
+    public function destroy($Producto)
+    {
+		Producto::eliminar($producto);
+		Session::flash('mensaje', 'Producto eliminado exitosamente');
+    }
 }
