@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Tomate') }}</title>
     <!-- Styles -->
     <link href="{{asset('css/Estilos.css')}}" rel="stylesheet">  
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,7 +22,11 @@
             
                 <div class="nav-xbootstrap">
                     <ul>
+                        @if (Auth::guest())
                         <li><a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a></li>
+                        @else
+                        <li><a href="{{ url('/home') }}">Inicio</a></li>
+                        @endif
             <!-- Right Side Of Navbar -->
                     <ul class=" navbar-right">
                         <!-- Authentication Links -->
@@ -50,6 +54,7 @@
                         @endif
                     </ul>
                         @if (Auth::check())
+
                         <li><a href="javascript:void(0)">REQUISICIÓN<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
                                 <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
@@ -65,8 +70,7 @@
                         <li><a href="javascript:void(0)" >Surtir Requisición<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                         </li>
                         @else
-                        <li><a href=" " >PROMOCIONES<span class=" "></span></a>        
-                        </li>
+                        
                         <li><a href="{{route('quienes')}}" >QUIENES SOMOS?<span class=" "></span></a>        
                          </li>
                         <li><a href="{{route('contacto')}}" >CONTACTANOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
