@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Producto;
+use Session;
 
 class ProductosController extends Controller
 {
@@ -14,9 +15,9 @@ class ProductosController extends Controller
 		 return view('productos', compact('productos'));    	
     }
 
-    public function store(Request $datos)
+    public function store(Request $request)
     {
-    	Producto::guardar($datos);
+    	Producto::guardar($request);
     	Session::flash('mensaje', 'Producto guardado exitosamente');
     	return back();
     }

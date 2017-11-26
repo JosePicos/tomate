@@ -8,7 +8,7 @@ class Producto extends Model
 {
     protected $table = 'productos';
 
-    public static function guardar(Request $datos)
+    public static function guardar($datos)
     {
     	$producto = new Producto();
     	$producto->descripcion = $datos->input('descripcion');
@@ -16,7 +16,7 @@ class Producto extends Model
     	$producto->save();   
     }
 
-    public static function actualizar($id, Request $datos)
+    public static function actualizar($id, $datos)
     {
     	$producto = Producto::find($id);
     	$producto->descripcion = $datos->input('descripcion');
