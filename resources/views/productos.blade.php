@@ -16,7 +16,7 @@
                         <th>Dias Madurez</th>
                         <th>Status</th>
                        
-                        <th><button type="submit" class=" form-control btn btn-success">Nuevo</button></th>
+                        <th><button  type="submit" class=" form-control btn btn-success" data-toggle="modal" data-target="#editar">Nuevo</button></th>
                     </tr>
                 </thead>
                 <tbody>
