@@ -61,9 +61,9 @@
                         @else
                         <li><a href=" " >PROMOCIONES<span class=" "></span></a>        
                         </li>
-                        <li><a href="javascript:void(0)" >QUIENES SOMOS?<span class=" "></span></a>        
+                        <li><a href="{{route('quienes')}}" >QUIENES SOMOS?<span class=" "></span></a>        
                         </li>
-                        <li><a href="javascript:void(0)" >CONTACTANOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+                        <li><a href="{{route('contacto')}}" >CONTACTANOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                         </li>
                         @endif
                     </ul>
