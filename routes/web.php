@@ -21,9 +21,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
 
-Route::get('/quienes', 'HomeController@quienes')->name('quienes');
+Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
 
-Route::get('/contacto','HomeController@contacto')->name('contacto');
+Route::get('/contacto','WelcomeController@contacto')->name('contacto');
 
 Route::resource('/Producto', 'ProductosController');
 
