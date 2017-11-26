@@ -14,8 +14,7 @@
                         <th>Descripción</th>
                         <th>Dias Madurez</th>
                         <th>Status</th>
-                       
-                        <th><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></th>
+                        <th><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal"> Abrir modal</button></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,4 +44,7 @@
         </div>
     </div>
 </div>
+
+@include('productos.nuevo')
 @endsection
+
