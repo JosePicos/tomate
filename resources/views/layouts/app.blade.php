@@ -16,6 +16,7 @@
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
     <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
 
+<link rel="stylesheet" href="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')}}">
 </head>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
@@ -90,5 +91,8 @@
     <script src="{{ asset('js/menu.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src ="{{asset('js/java1.js')}}"></script>
+
+    <script src="{{asset('https://code.jquery.com/jquery-1.12.4.min.js')}} "></script>
+<script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}} "></script>
 </body>
 </html>
