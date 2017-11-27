@@ -32,7 +32,7 @@
                 </thead>
                 <tbody>
                     @foreach($empleados as $empleado)
-                    <tr class="danger">
+                    <tr class="activate">
                         <td>{{ $empleado->id }}</td>
                         <td>{{ $empleado->nombre }}</td>
                         <td>{{ $empleado->fecha_alta }}</td>

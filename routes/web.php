@@ -15,17 +15,16 @@ Route::get('/', function () {
     return view('presentacion.inicio');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
-
 Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
-
 Route::get('/contacto','WelcomeController@contacto')->name('contacto');
 
-Route::resource('/Producto', 'ProductosController');
+Auth::routes();
 
-Route::resource('/Empleado', 'EmpleadosController');
+Route::group(['middleware' => 'auth'], function(){
+	Route::get('/home', 'HomeController@index')->name('home');
+	Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
+	Route::resource('/Producto', 'ProductosController');
+	Route::resource('/Empleado', 'EmpleadosController');
+});	
+
 
