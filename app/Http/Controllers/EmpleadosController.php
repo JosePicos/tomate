@@ -5,25 +5,26 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Empleado;
+use Session;
 
 class EmpleadosController extends Controller
 {
     public function index()
     {
-		 $empleados = Empleado::all();
-		 return view('empleados', compact('empleados'));    	
+        $empleados = Empleado::consultar();
+        return view('empleados', compact('empleados'));    	
     }
 
-    public function store(Request $datos)
+    public function store(Request $request)
     {
-    	Empleado::guardar($datos);
+    	Empleado::guardar($request);
     	Session::flash('mensaje', 'Empleado guardado exitosamente');
     	return back();
     }
 
-    public function update($Empleado, Request $datos)
+    public function update(Request $request, $id)
     {
-    	Empleado::actualizar($Empleado, $datos);
+    	Empleado::actualizar($id, $request);
     	Session::flash('mensaje', 'Datos del empleado ctualizados correctamente');
     	return back();	
     }

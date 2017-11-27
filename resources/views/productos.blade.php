@@ -6,24 +6,23 @@
         <div class="col-md-12 col-md-offset dark-grey">
             <div class="panel panel-default">
                 @if(Session::has('mensaje'))
-                <div class="panel_mensajes">
-                    <h3 class="mensajes"> 
-                    {{Session::get('mensaje')}}
-                    </h3>
-                </div>            
+                    <div class="panel_mensajes">
+                        <h3 class="mensajes"> 
+                        {{Session::get('mensaje')}}
+                        </h3>
+                    </div>            
                 @endif
                 @if(Session::has('mensaje_error'))
-                <div class="panel_mensajes_error">
-                    <h3 class="mensajes_error"> 
-                    {{Session::get('mensaje_error')}}
-                    </h3>
-                </div>            
-              @endif
-                <div class="panel-heading">Catálogo de Productos </div>
+                    <div class="panel_mensajes_error">
+                        <h3 class="mensajes_error"> 
+                        {{Session::get('mensaje_error')}}
+                        </h3>
+                    </div>            
+                @endif
+                <div class="panel-heading">Productos </div>
                      <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
-                       
                         <th>ID</th>
                         <th>Descripción</th>
                         <th>Dias Madurez</th>
