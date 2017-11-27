@@ -17,7 +17,7 @@ class CreateBodegasTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->integer('capacidad');
-            $table->integer('disponible');
+            $table->integer('disponible')->default(0);
             $table->timestamps();
         });
     }
