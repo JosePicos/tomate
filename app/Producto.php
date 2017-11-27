@@ -16,8 +16,9 @@ class Producto extends Model
     	$producto->save();   
     }
 
-    public static function actualizar($id, $datos)
+    public static function actualizar($datos, $id)
     {
+        return dd($datos);
     	$producto = Producto::find($id);
     	$producto->descripcion = $datos->input('descripcion');
     	$producto->dias_madurez = $datos->input('dias_madurez');

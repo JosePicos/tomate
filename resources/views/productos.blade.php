@@ -5,7 +5,21 @@
          <div class="container-fluid">
         <div class="col-md-12 col-md-offset dark-grey">
             <div class="panel panel-default">
-                <div class="panel-heading">Surtido de Requisicion </div>
+                @if(Session::has('mensaje'))
+                <div class="panel_mensajes">
+                    <h3 class="mensajes"> 
+                    {{Session::get('mensaje')}}
+                    </h3>
+                </div>            
+                @endif
+                @if(Session::has('mensaje_error'))
+                <div class="panel_mensajes_error">
+                    <h3 class="mensajes_error"> 
+                    {{Session::get('mensaje_error')}}
+                    </h3>
+                </div>            
+              @endif
+                <div class="panel-heading">Catálogo de Productos </div>
                      <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
@@ -17,23 +31,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="danger">
-                     
-                        <td>1</td>
-                        <td>Tomate Cherry</td>
-                        <td>20</td>
-                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar" >Modificar</button></td>
-                       
-                    </tr>
+                    @foreach($productos as $producto)
                     <tr class="activate">
-                        
-                         <td>2</td>
-                        <td>Tomate Bola</td>
-                        <td>15</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar" >Modificar</button></td>
-                      
+                        <td>{{ $producto->id }}</td>
+                        <td>{{ $producto->descripcion }}</td>
+                        <td>{{ $producto->dias_madurez }}</td>
+                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar-{{ $producto->id }}" >Modificar</button></td>
                     </tr>
-                    
+                    @include('productos.editar')
+                    @endforeach
                 </tbody>
             </table>
                 </div>
@@ -42,6 +48,6 @@
     </div>
 </div>
 @include('productos.nuevo')
-@include('productos.editar')
+
 @endsection
 

@@ -22,9 +22,9 @@ class ProductosController extends Controller
     	return back();
     }
 
-    public function update($Producto, Request $datos)
+    public function update(Request $request, $id)
     {
-    	Producto::actualizar($Producto, $datos);
+    	Producto::actualizar($id, $request);
     	Session::flash('mensaje', 'Datos del producto actualizados correctamente');
     	return back();	
     }

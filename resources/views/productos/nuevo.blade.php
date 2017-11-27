@@ -16,7 +16,7 @@
             <!-- FECHA NO EDITABLE -->
               <div class="form-group col-lg-6">
                 <label>Descripción</label>
-                <input id="descripcionNuevo" name="descripcion" type="text" name="" class="form-control" value="" required autofocus="hidden" autocomplete>
+                <input name="descripcion" type="text" name="" class="form-control" value="" required autofocus="hidden" autocomplete>
               </div>
               <div class="form-group col-lg-4">
                 <label>Dias de madurez</label>
