@@ -22,9 +22,9 @@ class EmpleadosController extends Controller
     	return back();
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, $Empleado)
     {
-    	Empleado::actualizar($id, $request);
+    	Empleado::actualizar($Empleado, $request);
     	Session::flash('mensaje', 'Datos del empleado ctualizados correctamente');
     	return back();	
     }

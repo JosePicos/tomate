@@ -13,7 +13,8 @@ class Empleado extends Model
     {
         $empleados = DB::Table('empleados')
                     ->join('users', 'empleados.id_user', '=', 'users.id')
-                    ->select('empleados.id', 'users.nombre', 'empleados.created_at as fecha_alta')
+                    ->select('empleados.id', 'users.nombre', 'users.email', 'users.password', 
+                             'empleados.created_at as  fecha_alta')
                     ->paginate(10);
         return $empleados;
     }
@@ -23,7 +24,7 @@ class Empleado extends Model
         $usuario = new User();
         $usuario->nombre = $datos->input('nombre');
         $usuario->email = $datos->input('email');
-        $usuario->password = $datos->input('password');
+        $usuario->password = bcrypt($datos->input('password'));
         $usuario->tipo = User::EMPLEADO;
         $usuario->save();
 
@@ -38,7 +39,7 @@ class Empleado extends Model
     	$usuario = User::find($empleado->id_user);
         $usuario->nombre = $datos->input('nombre');
         $usuario->email = $datos->input('email');
-        $usuario->password = $datos->input('password');
+        $usuario->password = bcrypt($datos->input('password'));
         $usuario->save();   
     }
 
