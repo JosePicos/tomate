@@ -1,12 +1,11 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row">
          <div class="container-fluid">
         <div class="col-md-12 col-md-offset dark-grey">
             <div class="panel panel-default">
-                <div class="panel-heading">Surtido de Requisicion </div>
+                <div class="panel-heading">Surtido de Requisición </div>
                      <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>

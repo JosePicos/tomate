@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
-      <h4 class="modal-title custom_align" id="Heading">Buscar Direccion</h4>
+      <h4 class="modal-title custom_align" id="Heading">Buscar Dirección</h4>
       </div>
         <div class="modal-body">
             <div class="form-group col-lg-2">
@@ -49,6 +49,7 @@
             </table>
               
                 <div class="modal-footer ">
+                  <button type="button" class="btn btn-success" data-dismiss="modal" style="width: 30%;" >Generar Surtido</button>
                   <button type="button" class="btn btn-danger" data-dismiss="modal" style="width: 30%;" >Cerrar</button>
                 </div>
               </div>
