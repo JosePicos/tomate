@@ -4,33 +4,77 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Empleado;
 
 class EmpleadosController extends Controller
 {
-    public function index()
+	
+	public function index(){
+
+		$empleados=Empleado::orderBy('id','ASC')->paginate(5);
+
+		return view('empleado.index',compact('empleados'));
+	}
+
+	public function show($id){
+
+		$product = Product::find($id);
+		return view('products.show',compact('product'));
+	}
+
+
+	public function destroy($id){
+
+		$product = Product::find($id);
+		$product->delete();
+		return back()->with('info', 'El producto fue eliminado');
+
+	}
+ 		public function edit($id)
     {
-		 $empleados = Empleado::all();
-		 return view('empleados', compact('productos'));    	
+        $product = Product::find($id);
+        
+        return view('products.edit', compact('product'));
     }
 
-    public function store(Request $datos)
+
+
+	    public function create()
     {
-    	Empleado::guardar($datos);
-    	Session::flash('mensaje', 'Empleado guardado exitosamente');
-    	return back();
+      return view('products.create');
     }
 
-    public function update($Empleado, Request $datos)
-    {
-    	Empleado::actualizar($producto, $datos);
-    	Session::flash('mensaje', 'Datos del empleado ctualizados correctamente');
-    	return back();	
+
+    public function store(ProductRequest $request){
+
+			$product = new Product;
+
+        	$product->name =$request->name;
+        	$product->short =$request->short;
+        	$product->body =$request->body;
+
+        	$product->save();
+
+        	return redirect()->route('products.index')
+        					->with('info','El producto fue guardado');
+
     }
 
-    public function destroy($Empleado)
-    {
-		Empleado::eliminar($producto);
-		Session::flash('mensaje', 'Empleado eliminado exitosamente');
+        public function update(ProductRequest $request,$id){
+
+    	
+        	$product = Product::find($id);
+
+        	$product->name =$request->name;
+        	$product->short =$request->short;
+        	$product->body =$request->body;
+
+        	$product->save();
+
+        	return redirect()->route('products.index')
+        					->with('info','El producto fue actualizado');
+
+    	return 'producto actualizado'.$id;
+
     }
+    
 }

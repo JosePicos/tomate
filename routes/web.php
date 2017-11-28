@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('presentacion.inicio');
+    return view('presentacion.index');
 });
 
 Auth::routes();
@@ -29,3 +29,10 @@ Route::resource('/Producto', 'ProductosController');
 
 Route::resource('/Empleado', 'EmpleadosController');
 
+Route::get('/index','WelcomeController@index')->name('index');
+
+Route::get('/about','WelcomeController@about')->name('about');
+
+Route::get('/post','WelcomeController@post')->name('post');
+
+Route::get('/contact','WelcomeController@contact')->name('contact');
