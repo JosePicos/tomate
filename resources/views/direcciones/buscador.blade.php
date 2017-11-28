@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
-      <h4 class="modal-title custom_align" id="Heading">Buscar Direccion</h4>
+      <h4 class="modal-title custom_align" id="Heading">Buscar Dirección</h4>
       </div>
         <div class="modal-body">
              <table class="table table-striped table-hover dark-grey">
@@ -15,7 +15,7 @@
                        
                         <th>Colonia</th>
                         <th>Calle</th>
-                        <th>Numero</th>
+                        <th>Número</th>
                         <th>Ciudad</th>
                         <th>C.P.</th>
                     </tr>
