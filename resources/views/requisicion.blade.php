@@ -50,7 +50,7 @@
             </div>
             <div class="form-group col-lg-1">
               <label></label>
-              <button type="submit" class=" form-control btn btn-primary">Buscar</button>
+              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir">Buscar</button>
             </div>
             </div>
             <!--COLONIA -->
@@ -75,7 +75,7 @@
             </div>
              <div class="form-group col-lg-2">
               <label></label>
-              <button type="submit" class=" form-control btn btn-primary">Buscar</button>
+              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod">Buscar</button>
             </div>
 
                      <table class="table table-striped table-hover dark-grey">
@@ -106,4 +106,6 @@
           </div>
       </div>
     </div>
+@include('direcciones.buscador');
+@include('productos.buscador');  
 @endsection
