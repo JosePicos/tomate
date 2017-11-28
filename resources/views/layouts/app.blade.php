@@ -59,7 +59,7 @@
                         <li><a href="javascript:void(0)">REQUISICIÓN<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
                                 <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
-                                <li><a href="javascript:void(0)" >Surtir Requisición</a></li>
+                                <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
                             </ul>
                         </li>
                         

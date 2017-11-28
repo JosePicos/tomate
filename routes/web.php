@@ -36,3 +36,5 @@ Route::get('/about','WelcomeController@about')->name('about');
 Route::get('/post','WelcomeController@post')->name('post');
 
 Route::get('/contact','WelcomeController@contact')->name('contact');
+
+Route::get('/Surtido','RequisicionesController@surtido')->name('surtido');
