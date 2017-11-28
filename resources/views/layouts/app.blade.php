@@ -15,7 +15,8 @@
     <link href="{{asset('fonts.css')}}" rel="stylesheet"> 
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
     <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
-
+    <link href="{{asset('css/mensajes.css')}}" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')}}">
 </head>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
@@ -58,17 +59,10 @@
                         <li><a href="javascript:void(0)">REQUISICIÓN<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
                                 <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
-                                <li><a href=" ">Monitoreo de Requisición</a></li>
+                                <li><a href="javascript:void(0)" >Surtir Requisición<span class="glyphicon glyphicon-chevron-down iconsize"></span></a></li>
                             </ul>
                         </li>
-                         <li><a href="javascript:void(0)">CATÁLOGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                            <ul class="dropdown">
-                                <li><a href="{{ route('Producto.index') }}">Productos</a></li>
-                                <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void(0)" >Surtir Requisición<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                        </li>
+                        
                         @else
                         
                         <li><a href="{{route('quienes')}}" >QUIENES SOMOS?<span class=" "></span></a>        
@@ -90,5 +84,7 @@
     <script src="{{ asset('js/menu.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src ="{{asset('js/java1.js')}}"></script>
+    <script src="{{asset('https://code.jquery.com/jquery-1.12.4.min.js')}} "></script>
+    <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}} "></script>
 </body>
 </html>
