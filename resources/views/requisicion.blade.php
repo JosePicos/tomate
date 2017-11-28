@@ -6,7 +6,7 @@
         <section class="container">
           <div class="container-page">        
             <div class="col-md-12">
-              <h3 class="dark-grey">Registro Requisicion</h3>
+              <h3 class="dark-grey">Registro Requisición</h3>
             <!-- Folio de la factura no editable -->
             <div class="form-group col-lg-2">
               <label>Folio</label>
@@ -26,19 +26,19 @@
             </div>
             <!-- DIRECCION -->
             <div class="form-group col-lg-12">
-              <label>Direccion</label>
+              <label>Dirección</label>
             </div>
             <!-- CODIGO POSTAL -->
             <div class="form-group col-lg-2">
-              <label>Codigo Postal</label>
+              <label>Código Postal</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
-            <!--CALLE -->
+            <!--Pais -->
             <div class="form-group col-lg-2">
-              <label>Pais</label>
+              <label>País</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
-            <!--COLONIA -->
+            <!--Estado -->
             <div class="form-group col-lg-2">
               <label>Estado</label>
               <input type="uso" name="" class="form-control" id="" value="">
@@ -58,17 +58,17 @@
               <label>Colonia</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
-            <!--LOCALIDAD -->
+            <!--Calle -->
             <div class="form-group col-lg-4">
               <label>Calle</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
-            <!--ESTADO -->
+            <!--Numero -->
             <div class="form-group col-lg-2">
-              <label>Numero</label>
+              <label>Número</label>
               <input type="uso" name="" class="form-control" id="" value="">
             </div>
-            <!-- CODIGO POSTAL -->
+            <!--Producto -->
             <div class="form-group col-lg-2">
               <label>Producto</label>
               <input type="uso" name="" class="form-control" id="" value="">
@@ -83,7 +83,7 @@
                     <tr>
                        
                         <th>ID</th>
-                        <th>Descripcion</th>
+                        <th>Descripción</th>
                         <th>Cantidad</th>
                     </tr>
                 </thead>
