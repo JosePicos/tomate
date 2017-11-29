@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('presentacion.inicio');
+    return view('presentacion.index');
 });
 
 Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
@@ -28,3 +28,12 @@ Route::group(['middleware' => 'auth'], function(){
 });	
 
 
+Route::get('/index','WelcomeController@index')->name('index');
+
+Route::get('/about','WelcomeController@about')->name('about');
+
+Route::get('/post','WelcomeController@post')->name('post');
+
+Route::get('/contact','WelcomeController@contact')->name('contact');
+
+Route::get('/Surtido','RequisicionesController@surtido')->name('surtido');

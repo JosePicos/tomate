@@ -20,7 +20,6 @@
 </head>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
-            
                 <div class="nav-xbootstrap">
                     <ul>
                         @if (Auth::guest())
@@ -55,27 +54,8 @@
                         @endif
                     </ul>
                         @if (Auth::check())
-
-                        <li><a href="javascript:void(0)">REQUISICIÓN<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                            <ul class="dropdown">
                                 <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
-                                <li><a href=" ">Monitoreo de Requisición</a></li>
-                            </ul>
-                        </li>
-                         <li><a href="javascript:void(0)">CATÁLOGOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                            <ul class="dropdown">
-                                <li><a href="{{ route('Producto.index') }}">Productos</a></li>
-                                <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void(0)" >Surtir Requisición<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                        </li>
-                        @else
-                        
-                        <li><a href="{{route('quienes')}}" >QUIENES SOMOS?<span class=" "></span></a>        
-                         </li>
-                        <li><a href="{{route('contacto')}}" >CONTACTANOS<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                        </li>
+                        <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
                         @endif
                     </ul>
                 </div>

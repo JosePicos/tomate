@@ -7,12 +7,22 @@ use App\Http\Controllers\Controller;
 
 class WelcomeController extends Controller
 {
-       public function quienes (){
-        return view ('presentacion.quienessomos');
-
+  	public function index(){
+        return view("presentacion.index");
     }
-      public function contacto (){
-        return view ('presentacion.contacto');
 
+        public function about(){
+        return view("presentacion.about");
     }
+
+        public function post(){
+        return view("presentacion.post");
+    }
+
+        public function contact(){
+        return view("presentacion.contact");
+    }
+
+
+
 }

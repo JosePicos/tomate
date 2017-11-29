@@ -9,7 +9,8 @@ use Session;
 
 class EmpleadosController extends Controller
 {
-    public function index()
+	
+	public function index()
     {
         $empleados = Empleado::consultar();
         return view('empleados', compact('empleados'));    	
