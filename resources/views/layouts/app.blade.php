@@ -20,10 +20,15 @@
 </head>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
+            
                 <div class="nav-xbootstrap">
                     <ul>
-                        @if (Auth::guest())
                         <li><a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a></li>
+            <!-- Right Side Of Navbar -->
+                      
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Login</a></li>
                         @else
                         <li><a href="{{ url('/home') }}">Inicio</a></li>
                         @endif
