@@ -1,0 +1,6 @@
+Cosas que se necesitan revision y modificar
+1.- Se realizara la entrada de producto a bodega con toda la documentacion necesaria
+2.- Diagramas de navegabilidad
+3.- Los contratos terminarlos y revisarlos
+4.- Revisar diseño de la base de datos
+5.- Diagramas de secuencia (Diseño)
