@@ -21,18 +21,9 @@
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
-
   </head>
-
   <body>
   <style>
-    .tam{
-      font-size: 50px;
-    }
-    .tam2{
-      font-size: 40px;
-    }
-
   </style>
 
     <!-- Navigation -->
@@ -46,16 +37,16 @@
         <div class=" tam collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="tam"  href="{{ route('index') }}">Home</a>
+              <a class="nav-link"  href="{{ route('index') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="tam2 nav-link" href="{{ route('about') }}">About</a>
+              <a class=" nav-link" href="{{ route('about') }}">About</a>
             </li>
             <li class="nav-item">
-                <a class="tam2 nav-link" href="{{ route('contact') }}">Contact</a>
+                <a class=" nav-link" href="{{ route('contact') }}">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="tam2 nav-link" href="{{ route('login') }}">Login</a>
+              <a class=" nav-link" href="{{ route('login') }}">Login</a>
             </li>
 
           </ul>
