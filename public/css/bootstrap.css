@@ -3507,11 +3507,13 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  background-color: white;
 }
 
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  width: 100px;
 }
 
 .nav-link:focus, .nav-link:hover {
