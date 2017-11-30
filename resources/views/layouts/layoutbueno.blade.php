@@ -29,7 +29,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="tam navbar-brand" href="{{ route('index') }}">Tomate.com</a>
+        <a class="tam navbar-brand" href="{{ route('index') }}">Tomate culiacan</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -37,16 +37,16 @@
         <div class=" tam collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link"  href="{{ route('index') }}">Home</a>
+              <a class="nav-link"  href="{{ route('index') }}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="{{ route('about') }}">About</a>
+              <a class=" nav-link" href="{{ route('about') }}">Acerca</a>
             </li>
             <li class="nav-item">
-                <a class=" nav-link" href="{{ route('contact') }}">Contact</a>
+                <a class=" nav-link" href="{{ route('contact') }}">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class=" nav-link" href="{{ route('login') }}">Login</a>
+              <a class=" nav-link" href="{{ route('login') }}">Iniciar sesion</a>
             </li>
 
           </ul>
@@ -69,7 +69,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="www.twiter.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -77,7 +77,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="http://www.facebook.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -85,7 +85,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="www.github.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -93,7 +93,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+            <p class="copyright text-muted">Copyright &copy; Ingenieria Web 2017 </p>
           </div>
         </div>
       </div>
