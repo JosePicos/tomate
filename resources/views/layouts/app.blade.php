@@ -61,7 +61,7 @@
                         @if (Auth::check())
                         <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                         <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
-                        <li><a href="{{ route('bodega.index') }}" >Surtir Bodega</a></li>
+                        
                         
                         @endif
                     </ul>
