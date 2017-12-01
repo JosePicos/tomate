@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLoteRequisicionsTable extends Migration
+class CreateClasificacionesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,7 @@ class CreateLoteRequisicionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('lotes_requisicion', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
-        });
+        //
     }
 
     /**
@@ -26,6 +23,6 @@ class CreateLoteRequisicionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lotes_requisicions');
+        //
     }
 }
