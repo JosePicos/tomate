@@ -4,3 +4,11 @@ Cosas que se necesitan revision y modificar
 3.- Los contratos terminarlos y revisarlos
 4.- Revisar diseño de la base de datos
 5.- Diagramas de secuencia (Diseño)
+6.- Caso de uso de entrada de mercancia a bodega
+7.- Espacio en bodega
+8.- Crear tablas ubicaciones
+
+
+REunion Con scrum MAster Julio
+
+-quitar folio de vista requisicion
