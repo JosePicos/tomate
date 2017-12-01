@@ -20,7 +20,9 @@ class CreateRequisicionesTable extends Migration
             $table->smallInteger('prioridad');
             $table->smallInteger('status');
             $table->string('pais', 100);
+            $table->string('estado', 100);
             $table->string('calle', 50);
+            $table->string('colonia', 50);
             $table->string('codigo_postal', 50);
             $table->string('municipio', 50);
             $table->string('numero', 50);
