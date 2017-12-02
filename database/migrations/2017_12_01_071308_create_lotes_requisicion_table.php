@@ -13,7 +13,14 @@ class CreateLotesRequisicionTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('lotes_requisicion', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_requisicion')->unsigned();
+            $table->integer('id_requisicion')->references('id')->on('requisiciones')->onDelete('restrict');
+            $table->integer('id_lote')->unsigned();
+            $table->integer('id_lote')->references('id')->on('lotes')->onDelete('restrict');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class CreateLotesRequisicionTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('lotes_requisicion');
     }
 }

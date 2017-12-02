@@ -13,7 +13,14 @@ class CreateUbicacionesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('ubicaciones', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_bodega')->unsigned();
+            $table->integer('id_bodega')->references('id')->on('bodegas')->onDelete('restrict');
+            $table->string('nombre', 50);
+            $table->boolean('disponible');    
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class CreateUbicacionesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('ubicaciones');
     }
 }

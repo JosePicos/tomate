@@ -13,7 +13,16 @@ class CreateProductosRequisicionTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('productos_requisicion', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_requisicion')->unsigned();
+            $table->integer('id_requisicion')->references('id')->on('requisiciones')->onDelete('restrict');
+            $table->integer('id_producto')->unsigned();
+            $table->integer('id_producto')->references('id')->on('productos')->onDelete('restrict');
+            $table->string('descripcion');
+            $table->integer('cantidad');    
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +32,6 @@ class CreateProductosRequisicionTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('productos_requisicion');
     }
 }

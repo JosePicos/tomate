@@ -13,7 +13,11 @@ class CreateClasificacionesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('clasificaciones', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('nombre', 50);    
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class CreateClasificacionesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('clasificaciones');
     }
 }

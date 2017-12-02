@@ -13,7 +13,20 @@ class CreateLotesTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('lotes', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('id_producto')->unsigned();
+            $table->integer('id_producto')->references('id')->on('productos')->onDelete('restrict');
+            $table->integer('id_bodega')->unsigned();
+            $table->integer('id_bodega')->references('id')->on('bodegas')->onDelete('restrict');
+            $table->integer('id_clasificacion')->unsigned();
+            $table->integer('id_clasificacion')->references('id')->on('clasificaciones')->onDelete('restrict');
+            $table->integer('id_ubicacion')->unsigned();
+            $table->integer('id_ubicacion')->references('id')->on('ubicaciones')->onDelete('restrict');
+            $table->date('fecha_corte');
+            $table->date('fecha_registro');    
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +36,6 @@ class CreateLotesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('lotes');
     }
 }
