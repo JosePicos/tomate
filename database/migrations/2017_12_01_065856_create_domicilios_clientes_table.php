@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDomicilioClientesTable extends Migration
+class CreateDomiciliosClientesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,13 +15,15 @@ class CreateDomicilioClientesTable extends Migration
     {
         Schema::create('domicilios_clientes', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_cte')->unsigned();
-            $table->foreign('id_cte')->references('id')->on('clientes')->onDelete('restrict');
+            $table->integer('id_cliente')->unsigned();
+            $table->foreign('id_cliente')->references('id')->on('cliente')->onDelete('restrict');
             $table->string('pais', 50);
-            $table->string('municipio', 100);
+            $table->string('estado', 50);
+            $table->string('municipio', 50);
+            $table->string('colonia', 50);
             $table->string('codigo_postal', 10);
             $table->string('calle', 50);
-            $table->string('numero', 50);
+            $table->string('numero', 10);    
             $table->timestamps();
         });
     }

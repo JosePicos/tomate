@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateClasificacionsTable extends Migration
+class CreateBodegasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateClasificacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('clasificaciones', function (Blueprint $table) {
+        Schema::create('bodegas', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('id_clasificacion')->unsigned();
+            $table->integer('id_clasificacion')->references('id')->on('clasificaciones')->onDelete('restrict');
             $table->string('nombre', 50);
+            $table->integer('capacidad');
+            $table->integer('disponible');    
             $table->timestamps();
         });
     }
@@ -27,6 +31,6 @@ class CreateClasificacionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clasificaciones');
+        Schema::dropIfExists('bodegas');
     }
 }

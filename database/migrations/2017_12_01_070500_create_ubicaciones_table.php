@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProductoRequisicionsTable extends Migration
+class CreateUbicacionesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateProductoRequisicionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('productos_requisiciones', function (Blueprint $table) {
+        Schema::create('ubicaciones', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_prod')->unsigned();
-            $table->foreign('id_prod')->references('id')->on('productos')->onDelete('restrict');
-            $table->string('descripcion_prod', 100);
-            $table->integer('cantidad');
+            $table->integer('id_bodega')->unsigned();
+            $table->integer('id_bodega')->references('id')->on('bodegas')->onDelete('restrict');
+            $table->string('nombre', 50);
+            $table->boolean('disponible');    
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateProductoRequisicionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('productos_requisiciones');
+        Schema::dropIfExists('ubicaciones');
     }
 }
