@@ -16,7 +16,7 @@ class CreateDomiciliosClientesTable extends Migration
         Schema::create('domicilios_clientes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_cliente')->unsigned();
-            $table->foreign('id_cliente')->references('id')->on('cliente')->onDelete('restrict');
+            $table->foreign('id_cliente')->references('id')->on('clientes')->onDelete('restrict');
             $table->string('pais', 50);
             $table->string('estado', 50);
             $table->string('municipio', 50);

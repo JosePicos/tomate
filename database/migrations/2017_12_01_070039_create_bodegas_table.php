@@ -16,7 +16,7 @@ class CreateBodegasTable extends Migration
         Schema::create('bodegas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_clasificacion')->unsigned();
-            $table->integer('id_clasificacion')->references('id')->on('clasificaciones')->onDelete('restrict');
+            $table->foreign('id_clasificacion')->references('id')->on('clasificaciones')->onDelete('restrict');
             $table->string('nombre', 50);
             $table->integer('capacidad');
             $table->integer('disponible');    
