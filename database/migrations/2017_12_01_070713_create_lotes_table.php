@@ -21,6 +21,8 @@ class CreateLotesTable extends Migration
             $table->integer('id_bodega')->references('id')->on('bodegas')->onDelete('restrict');
             $table->integer('id_clasificacion')->unsigned();
             $table->integer('id_clasificacion')->references('id')->on('clasificaciones')->onDelete('restrict');
+            $table->integer('id_ubicacion')->unsigned();
+            $table->integer('id_ubicacion')->references('id')->on('ubicaciones')->onDelete('restrict');
             $table->date('fecha_corte');
             $table->date('fecha_registro');    
             $table->timestamps();
