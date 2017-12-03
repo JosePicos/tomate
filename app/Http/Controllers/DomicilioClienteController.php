@@ -7,5 +7,8 @@ use App\Http\Controllers\Controller;
 
 class DomicilioClienteController extends Controller
 {
-    //
+	public function index()
+	{
+		DomicilioCliente::obtenerDireccion();
+	}
 }
