@@ -14,9 +14,9 @@ class CreateRequisicionesTable extends Migration
     public function up()
     {
         Schema::create('requisiciones', function (Blueprint $table) {
-            $table->increments('folio');
+            $table->increments('id');
             $table->integer('id_cliente')->unsigned();
-            $table->integer('id_cliente')->references('id')->on('clientes')->onDelete('restrict');
+            $table->foreign('id_cliente')->references('id')->on('clientes')->onDelete('restrict');
             $table->integer('id_empleado')->default(0);
             $table->date('fecha');
             $table->smallInteger('prioridad');
