@@ -16,9 +16,9 @@ class CreateLotesRequisicionTable extends Migration
         Schema::create('lotes_requisicion', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_requisicion')->unsigned();
-            $table->integer('id_requisicion')->references('id')->on('requisiciones')->onDelete('restrict');
+            $table->foreign('id_requisicion')->references('id')->on('requisiciones')->onDelete('restrict');
             $table->integer('id_lote')->unsigned();
-            $table->integer('id_lote')->references('id')->on('lotes')->onDelete('restrict');
+            $table->foreign('id_lote')->references('id')->on('lotes')->onDelete('restrict');
             $table->timestamps();
         });
     }
