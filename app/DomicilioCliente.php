@@ -3,8 +3,9 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Cliente;
 use Illuminate\Foundation\Auth\User;
+use Cliente;
+use DomicilioCliente;
 
 class DomicilioCliente extends Model
 {
@@ -29,5 +30,6 @@ class DomicilioCliente extends Model
         $domicilio->codigo_postal = $datos->input('codigo_postal');
         $domicilio->calle = $datos->input('calle');
         $domicilio->numero = $datos->input('numero');
+        $domicilio->save();
     }
 }
