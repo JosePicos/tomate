@@ -3,24 +3,22 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User;
-use Cliente;
-use DomicilioCliente;
-
+use Auth;
+    
 class DomicilioCliente extends Model
 {
     protected $table = 'domicilios_clientes';
 
     public static function obtenerDireccion()
     {
-    	$cliente = Cliente::where('id_user', Auth()->user()->id)->first();
+    	$cliente = Cliente::where('id_user', Auth::user()->id)->first();
     	$domicilio = DomicilioCliente::where('id_cliente', $cliente->id)->first();
     	return $domicilio;
     }
 
     public static function guardar($datos)
     {
-    	$cliente = Cliente::where('id_user', Auth()->user()->id)->first();
+    	$cliente = Cliente::where('id_user', Auth::user()->id)->first();
     	$domicilio = new DomicilioCliente();
     	$domicilio->id_cliente = $cliente->id;
     	$domicilio->pais = $datos->input('pais');
