@@ -52,7 +52,7 @@
                          <li><a href="{{ url('/home') }}">Inicio</a></li>
                         <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                         <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
-                        
+                        <li><a href="" >Entrada de Lotes</a></li>
                         @endif
                     </ul>
                 </div>
