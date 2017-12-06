@@ -10,10 +10,10 @@
     <!-- Styles -->
     <link href="{{asset('css/Estilos.css')}}" rel="stylesheet">  
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{asset('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')}}" rel="stylesheet">
+   
     <link href="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}" rel="stylesheet">
     <link href="{{asset('fonts.css')}}" rel="stylesheet"> 
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+    
     <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
     <link href="{{asset('css/mensajes.css')}}" rel="stylesheet"> 
     <link rel="stylesheet" href="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')}}">
