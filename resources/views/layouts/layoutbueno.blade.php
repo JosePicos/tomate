@@ -46,7 +46,15 @@
                 <a class=" nav-link" href="{{ route('contact') }}">Contacto</a>
             </li>
             <li class="nav-item">
+              @if (Auth::check())
+                   
+                    <a href="{{ route('home') }}" class="nav-link">
+                                    {{ Auth::user()->nombre }} 
+                            </a>
+                            
+              @else
               <a class=" nav-link" href="{{ route('login') }}">Iniciar sesion</a>
+              @endif
             </li>
 
           </ul>
@@ -54,13 +62,6 @@
       </div>
     </nav>
     @yield('content')
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer>
