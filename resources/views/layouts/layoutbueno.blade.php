@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>Tomate</title>
 
         <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -46,7 +46,15 @@
                 <a class=" nav-link" href="{{ route('contact') }}">Contacto</a>
             </li>
             <li class="nav-item">
+              @if (Auth::check())
+                   
+                    <a href="{{ route('home') }}" class="nav-link">
+                                    {{ Auth::user()->nombre }} 
+                            </a>
+                            
+              @else
               <a class=" nav-link" href="{{ route('login') }}">Iniciar sesion</a>
+              @endif
             </li>
 
           </ul>
@@ -54,13 +62,6 @@
       </div>
     </nav>
     @yield('content')
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer>
