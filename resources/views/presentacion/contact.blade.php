@@ -1,5 +1,4 @@
 @extends('layouts.layoutbueno')
-
 @section('content')
 
 <!-- Page Header -->

@@ -10,28 +10,17 @@
     <!-- Styles -->
     <link href="{{asset('css/Estilos.css')}}" rel="stylesheet">  
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-   
     <link href="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}" rel="stylesheet">
     <link href="{{asset('fonts.css')}}" rel="stylesheet"> 
-    
     <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
     <link href="{{asset('css/mensajes.css')}}" rel="stylesheet"> 
     <link rel="stylesheet" href="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')}}">
 </head>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
-            
                 <div class="nav-xbootstrap">
                     <ul>
-                        <li><a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a></li>
-            <!-- Right Side Of Navbar -->
-                      
-                        <!-- Authentication Links -->
-                        @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                        @else
-                        <li><a href="{{ url('/home') }}">Inicio</a></li>
-                        @endif
+                        <li><a href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a></li>        
             <!-- Right Side Of Navbar -->
                     <ul class=" navbar-right">
                         <!-- Authentication Links -->
@@ -39,6 +28,7 @@
                         <li><a href="{{ route('login') }}">Login</a></li>
                         <li><a href="{{ route('register') }}">Register</a></li>
                        @else
+                      
                         <li>
                              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->nombre }} <span class="glyphicon glyphicon-chevron-down iconsize"></span>
@@ -59,9 +49,9 @@
                         @endif
                     </ul>
                         @if (Auth::check())
+                         <li><a href="{{ url('/home') }}">Inicio</a></li>
                         <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                         <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
-                        
                         
                         @endif
                     </ul>
