@@ -14,7 +14,17 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    
+
+                    BIENBENID {{ Auth::user()->nombre }}
+                        
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>

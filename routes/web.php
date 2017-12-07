@@ -38,5 +38,5 @@ Route::get('/about','WelcomeController@about')->name('about');
 Route::get('/post','WelcomeController@post')->name('post');
 
 Route::get('/contact','WelcomeController@contact')->name('contact');
-
+Route::resource('mail','MailController');
 
