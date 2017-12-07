@@ -59,6 +59,7 @@
                                 <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
                             </ul>
                         </li>
+                        <li><a href="{{ route('Bodega.index') }}" >Dirección Envio</a></li>
                         @endif
                     </ul>
                 </div>
