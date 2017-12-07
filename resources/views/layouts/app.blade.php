@@ -52,11 +52,11 @@
                         <li><a href="{{ url('/home') }}">Inicio</a></li>
                         <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                         <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
-                        <li><a href="" >Entrada de Lotes</a></li>
+                        <li><a href="{{ route('Bodega.index') }}" >Entrada de Lotes</a></li>
                         <li><a href="">Catálogos<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                             <ul class="dropdown">
-                                <li><a href=" ">Productos</a></li>
-                                <li><a href="">Empleados</a></li>
+                                <li><a href="{{ route('Producto.index') }}">Productos</a></li>
+                                <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
                             </ul>
                         </li>
                         @endif
