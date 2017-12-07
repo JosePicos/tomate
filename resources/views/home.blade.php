@@ -15,13 +15,8 @@
                     @endif
 
                     
-
-                    BIENBENID {{ Auth::user()->nombre }}
+                    BIENBENIDO {{ Auth::user()->nombre }}
                         
-
-
-
-
 
 
 

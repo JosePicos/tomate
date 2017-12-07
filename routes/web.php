@@ -13,6 +13,7 @@
 
 Route::get('/', function () {
     return view('presentacion.index');
+   
 });
 
 Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
@@ -26,7 +27,6 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::resource('/Producto', 'ProductosController');
 	Route::resource('/Empleado', 'EmpleadosController');
 	Route::resource('/DomicilioCliente', 'DomicilioClienteController');
-	Route::resource('/Bodega', 'BodegasController');
 	Route::get('/Surtido','RequisicionesController@surtido')->name('surtido');
 });	
 
@@ -38,5 +38,6 @@ Route::get('/about','WelcomeController@about')->name('about');
 Route::get('/post','WelcomeController@post')->name('post');
 
 Route::get('/contact','WelcomeController@contact')->name('contact');
-Route::resource('mail','MailController');
+
+Route::resource('/mail','MailController');
 
