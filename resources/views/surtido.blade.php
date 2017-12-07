@@ -24,7 +24,7 @@
                         <td>Jose Luis Osuna</td>
                         <td>Mexico</td>
                         <td>Urgente</td>
-                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#surtido">Surtir</button></td>
+                           <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Surtir</button></td>
                        
                     </tr>
                     <tr class="activate">
@@ -33,7 +33,7 @@
                         <td>Elaine Osuna Picos</td>
                         <td>U.S.A.</td>
                         <td>Normal</td>
-                       <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#surtido">Surtir</button></td>
+                       <td class="col-check"><button type="submit" class=" form-control btn btn-primary"> Surtir</button></td>
                       
                     </tr>
                     <tr class="activate">
@@ -42,7 +42,7 @@
                         <td>Jose Alfredo Garcia</td>
                         <td>Mexico</td>
                         <td>Normal</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#surtido">Surtir</button></td>
+                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Surtir</button></td>
                     </tr>
                     <tr class="danger">
                         
@@ -50,7 +50,7 @@
                         <td>Julio Cesar Gomez Beltran</td>
                         <td>España</td>
                         <td>Urgente</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#surtido">Surtir</button></td>
+                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Surtir</button></td>
                     </tr>
                     <tr class="activate">
                         
@@ -58,7 +58,7 @@
                         <td>Paola</td>
                         <td>Francia</td>
                         <td>Normal</td>
-                      <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#surtido">Surtir</button></td>
+                      <td class="col-check"><button type="submit" class=" form-control btn btn-primary">Surtir</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -67,5 +67,4 @@
         </div>
     </div>
 </div>
-@include('surtido.surtir');
 @endsection
