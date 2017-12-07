@@ -49,16 +49,22 @@
                         @endif
                     </ul>
                         @if (Auth::check())
-                        <li><a href="{{ url('/home') }}">Inicio</a></li>
-                        <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
-                        <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
-                        <li><a href="{{ route('Bodega.index') }}" >Entrada de Lotes</a></li>
-                        <li><a href="">Catálogos<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-                            <ul class="dropdown">
-                                <li><a href="{{ route('Producto.index') }}">Productos</a></li>
-                                <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
-                            </ul>
-                        </li>
+                            <li><a href="{{ url('/home') }}">Inicio</a></li>
+                            @if (Auth::user()->tipo == 1 or Auth::user()->tipo == 2)
+                                 <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
+                            @endif                    
+                            @if (Auth::user()->tipo == 1 or Auth::user()->tipo == 3)
+                                <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
+                                <li><a href="{{ route('Bodega.index') }}" >Entrada de Lotes</a></li>
+                            @endif
+                            @if (Auth::user()->tipo == 1)
+                            <li><a href="">Catálogos<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+                                <ul class="dropdown">
+                                    <li><a href="{{ route('Producto.index') }}">Productos</a></li>
+                                    <li><a href="{{ route('Empleado.index') }}">Empleados</a></li>
+                                </ul>
+                            </li>
+                            @endif
                         @endif
                     </ul>
                 </div>
