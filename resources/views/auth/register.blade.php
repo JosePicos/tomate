@@ -64,7 +64,8 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">País</label>
                             <div class="col-md-6 control-label">
-                                <select name="pais" class="form-control">
+                                <select name="pais" class="form-control" required>
+                                    <option value="">Seleccione un país</option>
                                     @foreach($paises as $pais)
                                         <option value="{{ $pais->id }}">{{ $pais->nombre }}</option>
                                     @endforeach
