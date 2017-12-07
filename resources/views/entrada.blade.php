@@ -22,7 +22,7 @@
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Feccha de corte</label>
-                    <input class="form-control">
+                    <input type="date" class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Clasificación</label>
@@ -30,14 +30,6 @@
                         <option value="Tacos" >Normal</option>
                         <option>Urgente</option>
                     </select>
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <label>Bodega</label>
-                    <input class="form-control">
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <label>Ubicación</label>
-                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-2">
                     <label></label>
