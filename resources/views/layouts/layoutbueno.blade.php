@@ -70,7 +70,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="www.twiter.com">
+                <a href="https://twiter.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -78,7 +78,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="http://www.facebook.com">
+                <a href="https://www.facebook.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -86,7 +86,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="www.github.com">
+                <a href="https://www.github.com">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
