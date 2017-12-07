@@ -6,7 +6,12 @@
         <section class="container">
           <div class="container-page">        
             <div class="col-md-12">
-              <h3 class="dark-grey">Registro Requisición</h3>
+              <h3 class="dark-grey">Surtido Requisición</h3>
+            <!-- FECHA NO EDITABLE -->
+            <div class="form-group col-lg-2">
+              <label>Folio</label>
+              <input class="form-control" readonly>
+            </div>
             <!-- FECHA NO EDITABLE -->
             <div class="form-group col-lg-4">
               <label>Fecha</label>
@@ -14,10 +19,7 @@
             </div>
             <div class="form-group col-lg-2">
               <label>Pioridad</label>
-                <select class="form-control">
-                  <option value="Tacos" >Normal</option>
-                  <option>Urgente</option>
-                </select>
+              <input class="form-control" readonly>  
             </div>
             <!-- DIRECCION -->
             <div class="form-group col-lg-12">
@@ -43,10 +45,6 @@
               <label>Municipio/Provincia</label>
               <input class="form-control" readonly>
             </div>
-            <div class="form-group col-lg-1">
-              <label></label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir"><span class="glyphicon glyphicon-search"></span></button>
-            </div>
             <!--COLONIA -->
             <div class="form-group col-lg-6">
               <label>Colonia</label>
@@ -62,33 +60,26 @@
               <label>Número</label>
               <input class="form-control" readonly>
             </div>
-            <!--Producto -->
-            <div class="form-group col-lg-2">
-              <label>Producto</label>
-              <input class="form-control">
-            </div>
-             <div class="form-group col-lg-1">
-              <label></label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
-            </div>
-
           <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
                        
-                        <th>ID</th>
-                        <th>Descripción</th>
-                        <th>Cantidad</th>
-                        <th><span class="glyphicon glyphicon-trash"></span></th>
-                    </tr>
+                        <th>Lote ID</th>
+                        <th>Product ID</th>
+                        <th>Producto</th>
+                        <th>Bodega</th>
+                        <th>Ubicacion</th>
+                        <th>Clasificación</th>                        
                 </thead>
                 <tbody>
                     <tr class="activate">
                      
-                        <td>1</td>
-                        <td>Tomate Saladette</td>
-                        <td><input></td>
-                        <td><button type="submit" class=" form-control btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
+                        <td>123</td>
+                        <td>2</td>
+                        <td>Tomate Bola</td>
+                        <td>Mexico</td>
+                        <td>M45</td>
+                        <td>Mexico</td>
                     </tr>
                     
                 </tbody>
@@ -101,7 +92,5 @@
             </div>
           </div>
       </div>
-    </div>
-@include('direcciones.buscador');
-@include('productos.buscador');  
+    </div> 
 @endsection

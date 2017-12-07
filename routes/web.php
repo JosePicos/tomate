@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('presentacion.index');
-   
+    return view('presentacion.index'); 
 });
 
 Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
