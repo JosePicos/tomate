@@ -17,7 +17,7 @@
                     <input class="form-control">
                   </div>
                   <div class="form-group col-lg-6">
-                    <label>Descipción</label>
+                    <label>Descripción</label>
                     <input class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
@@ -27,8 +27,9 @@
                   <div class="form-group col-lg-4">
                     <label>Clasificación</label>
                       <select class="form-control">
-                        <option value="Tacos" >Normal</option>
-                        <option>Urgente</option>
+                        @foreach($clasificaciones as $clasificacion)
+                          <option value="{{ $clasificacion->id }}" >{{ $clasificacion->nombre }}</option>
+                        @endforeach
                     </select>
                   </div>
                   <div class="form-group col-lg-2">

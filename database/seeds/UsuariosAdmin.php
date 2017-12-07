@@ -17,7 +17,11 @@ class UsuariosAdmin extends Seeder
                         array('id' => 1, 'nombre' => 'José', 'email' => 'jl.moonlight93@gmail.com', 'password' => bcrypt('123456'),
                               'tipo' => 1, 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
                         array('id' => 2, 'nombre' => 'Adán', 'email' => 'Adán_090@hotmail.com', 'password' => bcrypt('123456'),
-                              'tipo' => 1, 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s'))
+                              'tipo' => 1, 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 3, 'nombre' => 'José Empleado', 'email' => 'jose@gmail.com', 'password' => bcrypt('123456'),
+                              'tipo' => 3, 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 4, 'nombre' => 'Adán Empleado', 'email' => 'adan@hotmail.com', 'password' => bcrypt('123456'),
+                              'tipo' => 3, 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s'))
                         );
         User::insert($usuarios);
     }
