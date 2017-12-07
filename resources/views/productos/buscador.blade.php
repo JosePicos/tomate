@@ -18,11 +18,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="activate">
-                     
-                        <td>1</td>
-                        <td>Tomate Bola</td>
-                       
+                  
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
                     </tr>
                   
                 </tbody>
