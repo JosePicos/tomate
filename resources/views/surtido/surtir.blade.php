@@ -6,20 +6,45 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
-      <h4 class="modal-title custom_align" id="Heading">Buscar Dirección</h4>
+      <h4 class="modal-title custom_align" id="Heading">Surtido de Requisición</h4>
       </div>
         <div class="modal-body">
             <div class="form-group col-lg-2">
               <label>Folio</label>
-              <input type="folio" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <div class="form-group col-lg-6">
               <label>Cliente</label>
-              <input type="folio" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <div class="form-group col-lg-4">
               <label>Prioridad</label>
-              <input type="folio" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
+            </div>
+            <!-- CODIGO POSTAL -->
+             <div class="form-group col-lg-4">
+              <label>Código Postal</label>
+              <input class="form-control" readonly>
+            </div>
+            <!--COLONIA -->
+            <div class="form-group col-lg-6">
+              <label>Colonia</label>
+              <input class="form-control" readonly>
+            </div>
+            <!-- NUMERO INTERIOR -->
+            <div class="form-group col-lg-4">
+              <label>Municipio/Provincia</label>
+              <input class="form-control" readonly>
+            </div>
+         <!--Pais -->
+            <div class="form-group col-lg-4">
+              <label>País</label>
+              <input class="form-control" readonly>
+            </div>
+            <!--Numero -->
+            <div class="form-group col-lg-4">
+              <label>Número</label>
+              <input class="form-control" readonly>
             </div>
             <div class="form-group col-lg-10">
               <span>Lotes a surtir</span>

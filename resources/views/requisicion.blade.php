@@ -10,11 +10,11 @@
             <!-- FECHA NO EDITABLE -->
             <div class="form-group col-lg-4">
               <label>Fecha</label>
-              <input type="date" name="" class="form-control" id="" value="">
+              <input type="date" name="" class="form-control" readonly>
             </div>
             <div class="form-group col-lg-2">
               <label>Pioridad</label>
-                <select type="uso" name="" class="form-control" id="" value="" >
+                <select type="uso" name="" class="form-control">
                   <option value="Tacos" >Normal</option>
                   <option>Urgente</option>
                 </select>
@@ -26,50 +26,50 @@
             <!-- CODIGO POSTAL -->
             <div class="form-group col-lg-2">
               <label>Código Postal</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!--Pais -->
             <div class="form-group col-lg-2">
               <label>País</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!--Estado -->
             <div class="form-group col-lg-2">
               <label>Estado</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!-- NUMERO INTERIOR -->
             <div class="form-group col-lg-2">
               <label>Municipio/Provincia</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <div class="form-group col-lg-1">
               <label></label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir">Buscar</button>
+              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir"><span class="glyphicon glyphicon-search"></span></button>
             </div>
             <!--COLONIA -->
             <div class="form-group col-lg-6">
               <label>Colonia</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!--Calle -->
             <div class="form-group col-lg-4">
               <label>Calle</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!--Numero -->
             <div class="form-group col-lg-2">
               <label>Número</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control" readonly>
             </div>
             <!--Producto -->
             <div class="form-group col-lg-2">
               <label>Producto</label>
-              <input type="uso" name="" class="form-control" id="" value="">
+              <input class="form-control">
             </div>
-             <div class="form-group col-lg-2">
+             <div class="form-group col-lg-1">
               <label></label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod">Buscar</button>
+              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
             </div>
 
           <table class="table table-striped table-hover dark-grey">
@@ -87,7 +87,7 @@
                      
                         <td>1</td>
                         <td>Tomate Saladette</td>
-                        <td><input type="" name=""></td>
+                        <td><input></td>
                         <td><button type="submit" class=" form-control btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
                     </tr>
                     
@@ -96,7 +96,7 @@
                 </div>
                 <div class="form-group col-lg-2">
               <label></label>
-              <button type="submit" class=" form-control btn btn-success">Guardar</button>
+              <button type="submit" form-control btn btn-success">Guardar</button>
             </div>
             </div>
           </div>

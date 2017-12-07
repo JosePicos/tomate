@@ -14,30 +14,30 @@
                   </div>
                   <div class="form-group col-lg-2">
                     <label>ID Producto</label>
-                    <input type="" name="" class="form-control" id="" value="">
+                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-6">
                     <label>Descipción</label>
-                    <input type="" name="" class="form-control" id="" value="">
+                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Feccha de corte</label>
-                    <input type="date" name="" class="form-control" id="" value="">
+                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Clasificación</label>
-                      <select type="uso" name="" class="form-control" id="" value="" >
+                      <select class="form-control">
                         <option value="Tacos" >Normal</option>
                         <option>Urgente</option>
                     </select>
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Bodega</label>
-                    <input type="" name="" class="form-control" id="" value="">
+                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Ubicación</label>
-                    <input type="" name="" class="form-control" id="" value="">
+                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-2">
                     <label></label>
