@@ -7,5 +7,8 @@ use App\Http\Controllers\Controller;
 
 class BodegasController extends Controller
 {
-   
+ 	public function index()
+ 	{
+ 		return view('entrada');
+ 	}  
 }

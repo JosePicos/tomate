@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::resource('/Producto', 'ProductosController');
 	Route::resource('/Empleado', 'EmpleadosController');
 	Route::resource('/DomicilioCliente', 'DomicilioClienteController');
+	Route::resource('/Bodega', 'BodegasController');
 	Route::get('/Surtido','RequisicionesController@surtido')->name('surtido');
 });	
 
