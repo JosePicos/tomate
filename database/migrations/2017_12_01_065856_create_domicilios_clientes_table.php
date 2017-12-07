@@ -17,7 +17,7 @@ class CreateDomiciliosClientesTable extends Migration
             $table->increments('id');
             $table->integer('id_cliente')->unsigned();
             $table->foreign('id_cliente')->references('id')->on('clientes')->onDelete('restrict');
-            $table->string('pais', 50);
+            $table->integer('pais')->unsigned();
             $table->string('estado', 50);
             $table->string('municipio', 50);
             $table->string('colonia', 50);
