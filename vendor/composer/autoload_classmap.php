@@ -49,6 +49,8 @@ return array(
     'App\\Ubicacion' => $baseDir . '/app/Ubicacion.php',
     'App\\User' => $baseDir . '/app/User.php',
     'Bodegas' => $baseDir . '/database/seeds/Bodegas.php',
+    'Ubicaciones' => $baseDir . '/database/seeds/Ubicaciones.php',
+    'Paises' => $baseDir . '/database/seeds/Paises.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
     'Carbon\\Exceptions\\InvalidDateException' => $vendorDir . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',

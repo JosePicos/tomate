@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ubicacion extends Model
 {
+
+    protected $table = 'ubicaciones';
+
     public static function ocupar($id)
     {
     	$ubicacion = Ubicacion::where('id', $id);
