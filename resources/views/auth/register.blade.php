@@ -64,46 +64,47 @@
                         <div class="form-group">
                             <label class="col-md-4 control-label">País</label>
                             <div class="col-md-6 control-label">
-                                <select class="form-control">
-                                    <option value="" >México</option>
-                                    <option>España</option>
+                                <select name="pais" class="form-control">
+                                    @foreach($paises as $pais)
+                                        <option value="{{ $pais->id }}">{{ $pais->nombre }}</option>
+                                    @endforeach
                                 </select>
                             </div>    
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Código Postal</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="codigo_postal" type="text" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Estado/provincia</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="estado" type="text" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Municipio</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="municipio" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Colonia</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="colonia" type="text" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Calle</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="calle" type="text" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label  class="col-md-4 control-label">Número</label>
                             <div class="col-md-6">
-                                <input  type="text" class="form-control">
+                                <input name="numero" type="text" class="form-control" required>
                             </div>
                         </div>
 
