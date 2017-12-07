@@ -87,7 +87,7 @@
                      
                         <td>1</td>
                         <td>Tomate Saladette</td>
-                        <td>5</td>
+                        <td><input type="" name=""></td>
                         <td><button type="submit" class=" form-control btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
                     </tr>
                     
