@@ -21,7 +21,7 @@
                     <input class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
-                    <label>Feccha de corte</label>
+                    <label>Fecha de corte</label>
                     <input type="date" class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
