@@ -6,6 +6,9 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Cliente;
+use App\DomicilioCliente;
+use App\Pais;
 
 class RegisterController extends Controller
 {
@@ -62,10 +65,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'nombre' => $data['nombre'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        $usuario = new User();
+        $usuario->nombre = $data['nombre'];
+        $usuario->email = $data['email'];
+        $usuario->password = bcrypt($data['password']);
+        $usuario->tipo = User::CLIENTE;
+        $usuario->save();
+
+        $cliente = new Cliente();
+        $cliente->id_user = $usuario->id;
+        $cliente->save();
+
+        $domicilio = new DomicilioCliente();
+        $domicilio->id_cliente = $cliente->id;
+        $domicilio->pais = $data['pais'];
+        $domicilio->estado = $data['estado']; 
+        $domicilio->municipio = (!empty($data['municipio'])) ? empty($data['municipio']) : '';
+        $domicilio->colonia = $data['colonia'];
+        $domicilio->codigo_postal = $data['codigo_postal'];
+        $domicilio->calle = $data['calle'];
+        $domicilio->numero = $data['numero'];
+        $domicilio->save();
+
+        return $usuario;
     }
 }

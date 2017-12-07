@@ -21,7 +21,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                   
+                   @foreach($domicilios as $domicilio)
+                    <tr class="activate">
+                        <td>{{ $domicilio->codigo_postal }}</td>
+                        <td>{{ $domicilio->pais }}</td>
+                        <td>{{ $domicilio->estado }}</td>
+                        <td>{{ $domicilio->colonia }}</td>
+                        <td>{{ $domicilio->numero }}</td>
+                    </tr>
+                    @endforeach
                 </tbody>
             </table>
                 </div>
