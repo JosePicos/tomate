@@ -22,7 +22,7 @@
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Fecha de corte</label>
-                    <input class="form-control">
+                    <input type="date" class="form-control">
                   </div>
                   <div class="form-group col-lg-4">
                     <label>Clasificación</label>
@@ -31,14 +31,6 @@
                           <option value="{{ $clasificacion->id }}" >{{ $clasificacion->nombre }}</option>
                         @endforeach
                     </select>
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <label>Bodega</label>
-                    <input class="form-control">
-                  </div>
-                  <div class="form-group col-lg-4">
-                    <label>Ubicación</label>
-                    <input class="form-control">
                   </div>
                   <div class="form-group col-lg-2">
                     <label></label>

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('presentacion.index'); 
+    return view('presentacion.index');
 });
 
 Route::get('/quienes', 'WelcomeController@quienes')->name('quienes');
@@ -38,5 +38,5 @@ Route::get('/about','WelcomeController@about')->name('about');
 Route::get('/post','WelcomeController@post')->name('post');
 
 Route::get('/contact','WelcomeController@contact')->name('contact');
-
+Route::resource('mail','MailController');
 

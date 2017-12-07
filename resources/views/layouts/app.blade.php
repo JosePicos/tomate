@@ -65,6 +65,7 @@
                                 </ul>
                             </li>
                             @endif
+                        <li><a href="{{ route('Bodega.index') }}" >Dirección Envio</a></li>
                         @endif
                     </ul>
                 </div>

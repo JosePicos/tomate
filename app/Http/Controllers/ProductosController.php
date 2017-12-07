@@ -9,6 +9,12 @@ use Session;
 
 class ProductosController extends Controller
 {
+
+    public function create(){
+     $productos = Producto::all();
+         return view('productos.buscador', compact('productos'));     
+    }
+
     public function index()
     {
 		 $productos = Producto::all();
