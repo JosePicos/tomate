@@ -50,10 +50,10 @@
                     </ul>
                         @if (Auth::check())
                             <li><a href="{{ url('/home') }}">Inicio</a></li>
-                            @if (Auth::user()->tipo == 1 or Auth::user()->tipo == 2)
+                            @if (Auth::user()->tipo == 2)
                                  <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                             @endif                    
-                            @if (Auth::user()->tipo == 1 or Auth::user()->tipo == 3)
+                            @if (Auth::user()->tipo == 3)
                                 <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
                                 <li><a href="{{ route('Bodega.index') }}" >Entrada de Lotes</a></li>
                             @endif
@@ -65,7 +65,9 @@
                                 </ul>
                             </li>
                             @endif
-                        <li><a href="{{ route('Bodega.index') }}" >Dirección Envio</a></li>
+                            @if (Auth::user()->tipo == 2)
+                                <li><a href="{{ route('Domicilio.index') }}" >Dirección Envio</a></li>
+                            @endif
                         @endif
                     </ul>
                 </div>
