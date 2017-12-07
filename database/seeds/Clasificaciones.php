@@ -14,10 +14,10 @@ class Clasificaciones extends Seeder
     {
         $fecha = new \DateTime();
         $clasificaciones = array(
-                        array('id' => 1, 'nombre' => 'Clasificación 1', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
-                        array('id' => 2, 'nombre' => 'Clasificación 2', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
-                        array('id' => 3, 'nombre' => 'Clasificación 3', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
-                        array('id' => 4, 'nombre' => 'Clasificación 4', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 1, 'nombre' => 'Asia', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 2, 'nombre' => 'Europa', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 3, 'nombre' => 'USA', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
+                        array('id' => 4, 'nombre' => 'Mexico', 'created_at' => $fecha->format('Y-m-d H:i:s'), 'updated_at' => $fecha->format('Y-m-d H:i:s')),
                     );
         Clasificacion::insert($clasificaciones);
     }
