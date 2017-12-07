@@ -26,7 +26,8 @@ Route::group(['middleware' => 'auth'], function(){
 	Route::get('/Requisicion/Nuevo', 'RequisicionesController@index')->name('requisicion');
 	Route::resource('/Producto', 'ProductosController');
 	Route::resource('/Empleado', 'EmpleadosController');
-	Route::resource('/DomicilioCliente', 'DomicilioClienteController');
+	Route::resource('/Domicilio', 'DomicilioClienteController');
+	Route::resource('/Bodega', 'BodegasController');
 	Route::get('/Surtido','RequisicionesController@surtido')->name('surtido');
 });	
 
