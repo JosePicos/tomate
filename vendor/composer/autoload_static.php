@@ -318,6 +318,7 @@ class ComposerStaticInite8952f9cc03a3dd3e5b536f12425a442
         'Bodegas' => __DIR__ . '/../..' . '/database/seeds/Bodegas.php',
         'Ubicaciones' => __DIR__ . '/../..' . '/database/seeds/Ubicaciones.php',
         'Paises' => __DIR__ . '/../..' . '/database/seeds/Paises.php',
+        'Productos' => __DIR__ . '/../..' . '/database/seeds/Productos.php',
         'Empleados' => __DIR__ . '/../..' . '/database/seeds/Empleados.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',

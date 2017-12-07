@@ -51,6 +51,7 @@ return array(
     'Bodegas' => $baseDir . '/database/seeds/Bodegas.php',
     'Ubicaciones' => $baseDir . '/database/seeds/Ubicaciones.php',
     'Paises' => $baseDir . '/database/seeds/Paises.php',
+    'Productos' => $baseDir . '/database/seeds/Productos.php',
     'Empleados' => $baseDir . '/database/seeds/Empleados.php',
     'Carbon\\Carbon' => $vendorDir . '/nesbot/carbon/src/Carbon/Carbon.php',
     'Carbon\\CarbonInterval' => $vendorDir . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
