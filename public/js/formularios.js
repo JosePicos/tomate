@@ -34,10 +34,12 @@ function agregarProducto(producto)
   var n = document.getElementById("detalle").rows.length;
   
   $('#detalle > tbody:last-child').append(
-    '<tr id="fila'+n+'" class="activate"><td>'+producto.id+
-    '</td><td>'+producto.descripcion+
-    '</td><td><input type="number" min="1" value="1">'+
-    '<td><button type="submit" class=" form-control btn btn-danger" onclick="eliminarPartida(this.parentNode.parentNode.id)"><span class="glyphicon glyphicon-remove"></span></button></td></tr>'
+    '<tr id="fila'+n+'" class="activate">'+
+    '<td><input name="id[]" value="'+producto.id+'" readonly></input></td>'+
+    '<td><input name="descripcion[]" value="'+producto.descripcion+'" readonly></input></td>'+
+    '<td><input name="cantidad[]" type="number" min="1" value="1"></input>'+
+    '<td><button type="submit" class=" form-control btn btn-danger" onclick="eliminarPartida(this.parentNode.parentNode.id)"><span class="glyphicon glyphicon-remove"></span></button></td>'+
+    '</tr>'
     );
 }
 
