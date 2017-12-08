@@ -8,6 +8,8 @@
             <div class="col-md-12">
               <h3 class="dark-grey">Registro Requisición</h3>
             <!-- FECHA NO EDITABLE -->
+            <form name="requisicion" action="{{ route('Requisicion.store')}}" method="POST">
+              {{ csrf_field() }}  
             <div class="form-group col-lg-4">
               <label>Fecha</label>
               <input type="date" class="form-control" value = "{{ $fecha }}" readonly>
@@ -26,46 +28,46 @@
             <!-- CODIGO POSTAL -->
             <div class="form-group col-lg-2">
               <label>Código Postal</label>
-              <input class="form-control" readonly>
+              <input name="codigo_postal" type="text" class="form-control" readonly required> 
             </div>
             <!--Pais -->
             <div class="form-group col-lg-2">
               <label>País</label>
-              <input class="form-control" readonly>
+              <input name="pais" type="text" class="form-control" readonly>
             </div>
             <!--Estado -->
             <div class="form-group col-lg-2">
               <label>Estado</label>
-              <input class="form-control" readonly>
+              <input name="estado" type="text" class="form-control" readonly>
             </div>
             <!-- NUMERO INTERIOR -->
             <div class="form-group col-lg-2">
               <label>Municipio/Provincia</label>
-              <input class="form-control" readonly>
+              <input name="municipio" type="text" class="form-control" readonly>
             </div>
             <div class="form-group col-lg-1">
               <label></label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir"><span class="glyphicon glyphicon-search"></span></button>
+              <button type="button" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscardir"><span class="glyphicon glyphicon-search"></span></button>
             </div>
             <!--COLONIA -->
             <div class="form-group col-lg-6">
               <label>Colonia</label>
-              <input class="form-control" readonly>
+              <input name="colonia" type="text" class="form-control" readonly>
             </div>
             <!--Calle -->
             <div class="form-group col-lg-4">
               <label>Calle</label>
-              <input class="form-control" readonly>
+              <input name="calle" type="text" class="form-control" readonly>
             </div>
             <!--Numero -->
             <div class="form-group col-lg-2">
               <label>Número</label>
-              <input class="form-control" readonly>
+              <input name="numero" type="text" class="form-control" readonly>
             </div>
             <!--Producto -->
             <div class="form-group col-lg-1">
               <label>Producto</label>
-              <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
+              <button type="button" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
             </div>
           <table id="detalle" class="table table-striped table-hover dark-grey">
                 <thead>
@@ -85,9 +87,11 @@
               <button type="submit" class="form-control btn btn-success">Guardar</button>
             </div>
             </div>
-          </div>
+          </div>  
       </div>
     </div>
+  </form>
+  </section>
 @include('direcciones.buscador');
 @include('productos.buscador');  
 @endsection

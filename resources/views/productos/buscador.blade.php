@@ -1,4 +1,4 @@
-  <!-- VISTA PARA LA BUSQUEDA DE DIRECCIONES DE LOS CLIENTES  -->
+  <!-- VISTA PARA LA BUSQUEDA DE PRODUCTOS  -->
 <div class="modal fade" id="buscarprod" tabindex="-1" role="dialog" aria-labelledby="buscarprod" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -19,7 +19,7 @@
                 </thead>
                 <tbody>
                   @foreach($productos as $producto)
-                    <tr>
+                    <tr class="activate">
                       <td>{{ $producto->id }}</td>
                       <td>{{ $producto->descripcion }} </td>
                       <td>{{ $producto->dias_madurez }} </td>

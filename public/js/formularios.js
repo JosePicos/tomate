@@ -45,3 +45,23 @@ function eliminarPartida(id)
 {
   $("#"+id).remove();
 } 
+
+function asignarDireccion(obj)
+{
+  var codigo_postal = $(obj).parents("tr").find("td").eq(0).html();
+  var pais = $(obj).parents("tr").find("td").eq(1).html();
+  var estado = $(obj).parents("tr").find("td").eq(2).html();
+  var municipio = $(obj).parents("tr").find("td").eq(3).html();
+  var colonia = $(obj).parents("tr").find("td").eq(4).html();
+  var calle = $(obj).parents("tr").find("td").eq(5).html();
+  var numero  = $(obj).parents("tr").find("td").eq(6).html();
+
+  var formulario = document.requisicion;
+  formulario.codigo_postal.value = codigo_postal;
+  formulario.pais.value = pais;
+  formulario.estado.value = estado;
+  formulario.municipio.value = municipio;
+  formulario.colonia.value = colonia;
+  formulario.calle.value = calle;
+  formulario.numero.value = numero;
+}
