@@ -26,3 +26,14 @@ function validaNombre(e){
     return false;
   }
 }
+
+function validarFecha(obj)
+{
+  var fecha = new Date(obj.value);
+  var fechaActual = new Date();
+  
+  if (fecha>fechaActual) {
+    obj.value = "";
+    alert('La fecha de corte no puede ser mayor a la fecha actual');
+  } 
+}

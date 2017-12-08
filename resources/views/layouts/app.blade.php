@@ -83,6 +83,7 @@
     <script src="{{ asset('js/menu.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src ="{{asset('js/java1.js')}}"></script>
+    <script src ="{{asset('js/formularios.js')}}"></script>
     <script src="{{asset('https://code.jquery.com/jquery-1.12.4.min.js')}} "></script>
     <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}} "></script>
 </body>
