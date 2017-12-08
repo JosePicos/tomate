@@ -10,9 +10,11 @@
                 <div class="panel-body">
                   <div class="form-group col-lg-4">
                     <label>Producto</label>
-                      <select class="form-control">
-                        <option value="" >TomateBola</option>
-                        <option>Urgente</option>
+                      <select class="form-control" required>
+                        <option value="">Seleccione un producto</option>
+                        @foreach($productos as $producto)
+                          <option value="{{ $producto->id }}">{{ $producto->nombre }}</option>
+                        @endforeach
                       </select>
                     </div>
                   <div class="form-group col-lg-4">
@@ -26,7 +28,7 @@
                           <option value="{{ $clasificacion->id }}" >{{ $clasificacion->nombre }}</option>
                         @endforeach
                     </select>
-                  </div>
+                  </div>  
                   <div class="form-group col-lg-2">
                     <label></label>
                     <button type="submit" class=" form-control btn btn-success"><span class="glyphicon glyphicon-floppy-disk"> Guardar </span></button>
