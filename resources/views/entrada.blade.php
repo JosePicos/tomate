@@ -8,18 +8,13 @@
                 <div class="panel-heading">Entrada de Lotes</div>
 
                 <div class="panel-body">
-                        <div class="form-group col-lg-2">
-                    <label></label>
-                    <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
-                  </div>
-                  <div class="form-group col-lg-2">
-                    <label>ID Producto</label>
-                    <input class="form-control">
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <label>Descripción</label>
-                    <input class="form-control">
-                  </div>
+                  <div class="form-group col-lg-4">
+                    <label>Producto</label>
+                      <select class="form-control">
+                        <option value="" >TomateBola</option>
+                        <option>Urgente</option>
+                      </select>
+                    </div>
                   <div class="form-group col-lg-4">
                     <label>Fecha de corte</label>
                     <input type="date" class="form-control">
@@ -41,6 +36,4 @@
         </div>
     </div>
 </div>
-
-@include('productos.buscador');
 @endsection
