@@ -34,7 +34,7 @@
                       </div>
                     <div class="form-group col-lg-4">
                       <label>Fecha de corte</label>
-                      <input type="date" class="form-control" required>
+                      <input type="date" class="form-control" onblur="validarFecha(this)" required>
                     </div>
                     <div class="form-group col-lg-4">
                       <label>Clasificación</label>
