@@ -9,7 +9,9 @@ class RequisicionesController extends Controller
 {
     public function index()
     {
-    	return view('requisicion');
+    	$fecha = new \DateTime();
+    	$fecha = $fecha->format('Y-m-d');
+    	return view('requisicion', compact('fecha'));
     }
 
     public function surtido()
