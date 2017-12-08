@@ -28,3 +28,20 @@ function validarFecha(obj)
       alert('La fecha de corte no puede ser mayor a la fecha actual');
   } 
 }
+
+function agregarProducto(producto)
+{
+  var n = document.getElementById("detalle").rows.length;
+  
+  $('#detalle > tbody:last-child').append(
+    '<tr id="fila'+n+'" class="activate"><td>'+producto.id+
+    '</td><td>'+producto.descripcion+
+    '</td><td><input type="number" min="1" value="1">'+
+    '<td><button type="submit" class=" form-control btn btn-danger" onclick="eliminarPartida(this.parentNode.parentNode.id)"><span class="glyphicon glyphicon-remove"></span></button></td></tr>'
+    );
+}
+
+function eliminarPartida(id) 
+{
+  $("#"+id).remove();
+} 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Producto; 
 
 class RequisicionesController extends Controller
 {
@@ -11,7 +12,8 @@ class RequisicionesController extends Controller
     {
     	$fecha = new \DateTime();
     	$fecha = $fecha->format('Y-m-d');
-    	return view('requisicion', compact('fecha'));
+        $productos = Producto::all();
+    	return view('requisicion', compact('fecha', 'productos'));
     }
 
     public function surtido()

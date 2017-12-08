@@ -63,22 +63,13 @@
               <input class="form-control" readonly>
             </div>
             <!--Producto -->
-            <div class="form-group col-lg-4">
+            <div class="form-group col-lg-1">
               <label>Producto</label>
-              <select class="form-control">
-                <option value="" >TomateBola</option>
-                <option>Urgente</option>
-                </select>
-            </div>
-             <div class="form-group col-lg-1">
-              <label></label>
               <button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
             </div>
-
-          <table class="table table-striped table-hover dark-grey">
+          <table id="detalle" class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
-                       
                         <th>ID</th>
                         <th>Descripción</th>
                         <th>Cantidad</th>
@@ -86,14 +77,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="activate">
-                     
-                        <td>1</td>
-                        <td>Tomate Saladette</td>
-                        <td><input></td>
-                        <td><button type="submit" class=" form-control btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button></td>
-                    </tr>
-                    
                 </tbody>
             </table>
                 </div>
