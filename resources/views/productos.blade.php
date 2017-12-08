@@ -26,7 +26,7 @@
                         <th>ID</th>
                         <th>Descripción</th>
                         <th>Dias Madurez</th>
-                        <th><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nuevo"> Nuevo</button></th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -35,7 +35,7 @@
                         <td>{{ $producto->id }}</td>
                         <td>{{ $producto->descripcion }}</td>
                         <td>{{ $producto->dias_madurez }}</td>
-                         <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar-{{ $producto->id }}" >Modificar</button></td>
+                        
                     </tr>
                     @include('productos.editar')
                     @endforeach

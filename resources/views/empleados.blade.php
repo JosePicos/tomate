@@ -36,7 +36,6 @@
                         <td>{{ $empleado->id }}</td>
                         <td>{{ $empleado->nombre }}</td>
                         <td>{{ $empleado->fecha_alta }}</td>
-                        <td class="col-check"><button type="submit" class=" form-control btn btn-primary" data-toggle="modal" data-target="#editar-{{ $empleado->id }}" >Modificar</button></td>
                     </tr>
                     @include('empleado.editar')
                     @endforeach

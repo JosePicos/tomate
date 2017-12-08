@@ -1,7 +1,7 @@
   <!-- VISTA PARA LA BUSQUEDA DE DIRECCIONES DE LOS CLIENTES  -->
 <div class="modal fade" id="buscardir" tabindex="-1" role="dialog" aria-labelledby="buscardir" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content col-md-12 col-md-offset dark-grey">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
@@ -12,10 +12,10 @@
              <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
-                        <th>Codigo Postal</th>
+                        <th width="100">Codigo Postal</th>
                         <th>País</th>
                         <th>Estado</th>
-                        <th>Municipio/Provincia</th>
+                        <th>Municipio o Provincia</th>
                         <th>Colonia.</th>
                         <th>Calle</th>
                         <th>Número</th>
