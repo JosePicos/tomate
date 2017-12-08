@@ -8,6 +8,8 @@ use App\Pais;
 use App\Cliente;
 use Auth;
 use Illuminate\Support\Facades\DB;
+use App\DomicilioCliente;
+use Session;
 
 class DomicilioClienteController extends Controller
 {
@@ -24,5 +26,12 @@ class DomicilioClienteController extends Controller
                     ->paginate(10);
 
 		return view('direccionCliente', compact('paises', 'domicilios'));
+	}
+
+	public function store(Request $request)
+	{
+		DomicilioCliente::guardar($request);
+		Session::flash('mensaje', 'Dirección guardada exitosamente');
+		return back();
 	}
 }

@@ -10,39 +10,41 @@
           <h4 class="modal-title custom_align" id="Heading">NUEVO PRODUCTO</h4>
         </div>
         <div class="modal-body">
-          <form action= "{{ route('Producto.store')}}" method="POST">
+          <form action= "{{ route('Domicilio.store') }}" method="POST">
             {{ csrf_field() }} 
             <div class="form-group"> 
               <div class="form-group col-lg-6">
                 <label>Código Postal</label>
-                <input type="text" class="form-control" required autofocus="hidden" autocomplete>
+                <input name="codigo_postal" type="text" class="form-control" required autofocus="hidden" autocomplete>
               </div>
               <div class="form-group col-lg-6">
                 <label>País</label>
-                <select class="form-control">
-                  <option value="" >Mexico</option>
-                  <option>Alemania</option>
+                <select name="pais" class="form-control" required>
+                  <option value="">Seleccione pais</option>
+                  @foreach($paises as $pais)
+                    <option value="{{ $pais->id }}">{{ $pais->nombre}}</option>
+                  @endforeach
                 </select>
               </div>
               <div class="form-group col-lg-6">
                 <label>Estado/Provincia</label>
-                <input type="text" class="form-control" >
+                <input name="estado" type="text" class="form-control" required>
               </div>
               <div class="form-group col-lg-6">
                 <label>Municipio</label>
-                <input type="text" class="form-control" >
+                <input name="municipio" type="text" class="form-control">
               </div>
               <div class="form-group col-lg-8">
                 <label>Colonia</label>
-                <input type="text" class="form-control" >
+                <input name="colonia" type="text" class="form-control" required>
               </div>
               <div class="form-group col-lg-6">
                 <label>Calle</label>
-                <input type="text" class="form-control" >
+                <input name="calle" type="text" class="form-control" required>
               </div>
               <div class="form-group col-lg-6">
                 <label>Número</label>
-                <input type="text" class="form-control" >
+                <input name="numero" type="text" class="form-control" required>
               </div>  
             </div>
                <div class="modal-footer ">

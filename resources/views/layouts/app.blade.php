@@ -87,5 +87,6 @@
     <script src ="{{asset('js/formularios.js')}}"></script>
     <script src="{{asset('https://code.jquery.com/jquery-1.12.4.min.js')}} "></script>
     <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}} "></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </body>
 </html>

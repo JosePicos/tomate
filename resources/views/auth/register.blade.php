@@ -15,7 +15,7 @@
                             <label for="name" class="col-md-4 control-label">Nombre</label>
 
                             <div class="col-md-6">
-                                <input id="nombre" type="text" class="form-control" name="nombre" value="{{ old('nombre') }}" required autofocus>
+                                <input id="nombre" type="text" class="form-control" name="nombre" value="{{ old('nombre') }}" onkeypress="return validarNombre(event)" required autofocus>
 
                                 @if ($errors->has('nombre'))
                                     <span class="help-block">
