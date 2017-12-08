@@ -11,6 +11,7 @@
     <link href="{{asset('css/Estilos.css')}}" rel="stylesheet">  
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js')}}" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="{{asset('tomateicon.png')}}">
     <link href="{{asset('fonts.css')}}" rel="stylesheet"> 
     <link href="{{asset('css/menu.css')}}" rel="stylesheet"> 
     <link href="{{asset('css/mensajes.css')}}" rel="stylesheet"> 

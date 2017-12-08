@@ -10,6 +10,8 @@
 
     <title>Tomate</title>
 
+    <link rel="icon" type="image/ico" href="{{asset('tomateicon.png')}}">
+
         <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
