@@ -30,6 +30,21 @@ class Requisicion extends Model
         $requisicion->calle = $datos->input('calle');
         $requisicion->numero = $datos->input('numero');
         $requisicion->save();
+
+        $numeroPartidas = count($datos->input('id'));
+        $ids = $datos->input('id');
+        $descripciones = $datos->input('descripcion');
+        $cantidades = $datos->input('cantidad');
+
+        for ($i = 0; $i < $numeroPartidas; $i++) {   
+             $productoRequisicion = new ProductoRequisicion();
+             $productoRequisicion->id_requisicion = $requisicion->id;
+             $productoRequisicion->id_producto = $ids[$i];
+             $productoRequisicion->descripcion = $descripciones[$i];
+             $productoRequisicion->cantidad = $cantidades[$i];
+             $productoRequisicion->save();
+        }
+
         return $requisicion;
     }
 

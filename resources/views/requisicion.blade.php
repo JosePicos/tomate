@@ -86,7 +86,7 @@
               <label>Producto</label>
               <button type="button" class=" form-control btn btn-primary" data-toggle="modal" data-target="#buscarprod"><span class="glyphicon glyphicon-search"></span></button>
             </div>
-          <table id="detalle" class="table table-striped table-hover dark-grey">
+          <table name="productos" id="detalle" class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
                         <th>ID</th>
