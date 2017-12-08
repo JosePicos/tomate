@@ -28,6 +28,10 @@
                     </select>
                   </div>
                   <div class="form-group col-lg-2">
+                    <label>Cantidad</label>
+                    <input type="" class="form-control">
+                  </div>
+                  <div class="form-group col-lg-2">
                     <label></label>
                     <button type="submit" class=" form-control btn btn-success"><span class="glyphicon glyphicon-floppy-disk"> Guardar </span></button>
                   </div>
