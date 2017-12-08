@@ -63,9 +63,12 @@
               <input class="form-control" readonly>
             </div>
             <!--Producto -->
-            <div class="form-group col-lg-2">
+            <div class="form-group col-lg-4">
               <label>Producto</label>
-              <input class="form-control">
+              <select class="form-control">
+                <option value="" >TomateBola</option>
+                <option>Urgente</option>
+                </select>
             </div>
              <div class="form-group col-lg-1">
               <label></label>
