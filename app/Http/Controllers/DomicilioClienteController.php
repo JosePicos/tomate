@@ -8,12 +8,15 @@ use App\Pais;
 use App\Cliente;
 use Auth;
 use Illuminate\Support\Facades\DB;
+use App\DomicilioCliente;
+use Session;
 
 class DomicilioClienteController extends Controller
 {
 	public function index()
 	{
 		$paises = Pais::all();
+		$paises = $paises->sortBy('nombre')->values()->all(); 
 		$cliente = Cliente::where('id_user', Auth::user()->id)->first();
 		$domicilios = DB::Table('domicilios_clientes')
                     ->join('paises', 'domicilios_clientes.pais', '=', 'paises.id')
@@ -24,5 +27,12 @@ class DomicilioClienteController extends Controller
                     ->paginate(10);
 
 		return view('direccionCliente', compact('paises', 'domicilios'));
+	}
+
+	public function store(Request $request)
+	{
+		DomicilioCliente::guardar($request);
+		Session::flash('mensaje', 'Dirección guardada exitosamente');
+		return back();
 	}
 }

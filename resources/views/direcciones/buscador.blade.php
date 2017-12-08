@@ -12,32 +12,34 @@
              <table class="table table-striped table-hover dark-grey">
                 <thead>
                     <tr>
-                       
-                        <th>Colonia</th>
+                        <th width="100">Codigo Postal</th>
+                        <th>País</th>
+                        <th>Estado</th>
+                        <th>Municipio o Provincia</th>
+                        <th>Colonia.</th>
                         <th>Calle</th>
                         <th>Número</th>
-                        <th>Ciudad</th>
-                        <th>C.P.</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="activate">
-                     
-                        <td>Rosario Uzarraga</td>
-                        <td>Cosmos</td>
-                        <td>3817</td>
-                        <td>Culiacan</td>
-                        <td>80014</td>
+                    @foreach($domicilios as $domicilio)
+                    <tr class="activate" id="{{ $domicilio->id }}">
+                        <td>{{ $domicilio->codigo_postal }} </td>
+                        <td>{{ $domicilio->pais }} </td>
+                        <td>{{ $domicilio->estado }} </td>
+                        <td>{{ $domicilio->municipio }} </td>
+                        <td>{{ $domicilio->colonia }} </td>
+                        <td>{{ $domicilio->calle }} </td>
+                        <td>{{ $domicilio->numero }} </td>
+                        <td><button type="button" class="btn btn-primary" onclick="asignarDireccion(this)" data-dismiss="modal">Elegir</button></td>
                     </tr>
-                  
+                    @endforeach
                 </tbody>
             </table>
-              
                 <div class="modal-footer ">
                   <button type="button" class="btn btn-danger" data-dismiss="modal" style="width: 30%;" >Cerrar</button>
                 </div>
               </div>
-         
         <!-- /.modal-content --> 
         </div>
         <!-- /.modal-dialog --> 

@@ -23,7 +23,7 @@ class DomicilioCliente extends Model
     	$domicilio->id_cliente = $cliente->id;
     	$domicilio->pais = $datos->input('pais');
         $domicilio->estado = $datos->input('estado');
-        $domicilio->municipio = $datos->input('municipio');
+        $domicilio->municipio = (!empty($datos->input('municipio'))) ? $datos->input('municipio') : '';
         $domicilio->colonia = $datos->input('colonia');
         $domicilio->codigo_postal = $datos->input('codigo_postal');
         $domicilio->calle = $datos->input('calle');
