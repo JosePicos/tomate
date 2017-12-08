@@ -10,13 +10,13 @@
             <!-- FECHA NO EDITABLE -->
             <div class="form-group col-lg-4">
               <label>Fecha</label>
-              <input type="date" class="form-control" readonly>
+              <input type="date" class="form-control" value = "{{ $fecha }}" readonly>
             </div>
             <div class="form-group col-lg-2">
               <label>Pioridad</label>
                 <select class="form-control">
-                  <option value="Tacos" >Normal</option>
-                  <option>Urgente</option>
+                  <option value="1">Normal</option>
+                  <option value="2">Urgente</option>
                 </select>
             </div>
             <!-- DIRECCION -->

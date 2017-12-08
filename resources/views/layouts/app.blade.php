@@ -53,11 +53,11 @@
                             @if (Auth::user()->tipo == 2)
                                  <li><a href="{{ route('requisicion') }} ">Alta Requisición</a></li>
                             @endif                    
-                            @if (Auth::user()->tipo == 1)
+                            @if (Auth::user()->tipo == 3)
                                 <li><a href="{{ route('surtido') }}" >Surtir Requisición</a></li>
                                 <li><a href="{{ route('Bodega.index') }}" >Entrada de Lotes</a></li>
                             @endif
-                            @if (Auth::user()->tipo == 1)
+                            @if (Auth::user()->tipo == 1 or Auth::user()->tipo == 3)
                             <li><a href="">Catálogos<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
                                 <ul class="dropdown">
                                     <li><a href="{{ route('Producto.index') }}">Productos</a></li>
