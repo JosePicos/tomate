@@ -34,7 +34,7 @@
                       </div>
                     <div class="form-group col-lg-4">
                       <label>Fecha de corte</label>
-                      <input type="date" class="form-control" onblur="validarFecha(this)" required>
+                      <input name="fecha_corte" type="date" class="form-control" onblur="validarFecha(this)" required>
                     </div>
                     <div class="form-group col-lg-4">
                       <label>Clasificación</label>
@@ -47,7 +47,7 @@
                     </div>  
                   <div class="form-group col-lg-2">
                     <label>Cantidad</label>
-                    <input name="cantidad" type="number" class="form-control" required>
+                    <input name="cantidad" type="number" min="1" class="form-control" required>
                   </div>
                   <div class="form-group col-lg-2">
                     <label></label>

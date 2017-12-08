@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Clasificacion; 
 use App\Producto;
+use App\Bodega;
 use Session;
 
 class BodegasController extends Controller
@@ -19,7 +20,7 @@ class BodegasController extends Controller
 
  	public function store(Request $request)
  	{
- 		//Bodega::guardar($request);
+ 		Bodega::ingresarMercancia($request);
  		Session::flash("mensaje", "Entrada de lotes realizada correctamente");
  		return back();
  	}
