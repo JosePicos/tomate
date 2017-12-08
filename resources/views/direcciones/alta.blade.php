@@ -15,7 +15,7 @@
             <div class="form-group"> 
               <div class="form-group col-lg-6">
                 <label>Código Postal</label>
-                <input name="codigo_postal" type="text" class="form-control" required autofocus="hidden" autocomplete>
+                <input name="codigo_postal" type="text" class="form-control" required autocomplete>
               </div>
               <div class="form-group col-lg-6">
                 <label>País</label>

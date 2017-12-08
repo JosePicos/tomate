@@ -16,6 +16,7 @@ class DomicilioClienteController extends Controller
 	public function index()
 	{
 		$paises = Pais::all();
+		$paises = $paises->sortBy('nombre')->values()->all(); 
 		$cliente = Cliente::where('id_user', Auth::user()->id)->first();
 		$domicilios = DB::Table('domicilios_clientes')
                     ->join('paises', 'domicilios_clientes.pais', '=', 'paises.id')

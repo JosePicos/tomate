@@ -21,15 +21,16 @@ class Requisicion extends Model
     	$requisicion->id_cliente = $cliente->id;
     	$requisicion->fecha = $fecha->format('Y-m-d H:i:s');
     	$requisicion->prioridad = $datos->input('prioridad');
-    	$requisicion->status = STATUS_PENDIENTE;
+    	$requisicion->status = self::STATUS_PENDIENTE;
     	$requisicion->pais = $datos->input('pais');
         $requisicion->estado = $datos->input('estado');
-        $requisicion->municipio = $datos->input('municipio');
+        $requisicion->municipio = (!empty($datos->input('municipio'))) ? $datos->input('municipio') : '';
         $requisicion->colonia = $datos->input('colonia');
         $requisicion->codigo_postal = $datos->input('codigo_postal');
         $requisicion->calle = $datos->input('calle');
         $requisicion->numero = $datos->input('numero');
         $requisicion->save();
+        return $requisicion;
     }
 
     public static function surtir($id)
@@ -37,7 +38,7 @@ class Requisicion extends Model
     	$empleado = Empleado::where('id_user', Auth::user()->id)->first();
     	$requisicion = Requisicion::where('id', $id);
     	$requisicion->id_empleado = $empleado->id;
-    	$requisicion->status = STATUS_SURTIDO;
+    	$requisicion->status = self::STATUS_SURTIDO;
     	$requisicion->save(); 
     }
 }

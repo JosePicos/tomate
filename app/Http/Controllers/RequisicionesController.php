@@ -7,8 +7,10 @@ use App\Http\Controllers\Controller;
 use App\Producto; 
 use App\DomicilioCliente;
 use App\Cliente;
+use App\Requisicion;
 use Auth;
 use Illuminate\Support\Facades\DB;
+use Session;
 
 class RequisicionesController extends Controller
 {
@@ -28,6 +30,13 @@ class RequisicionesController extends Controller
                     ->get();
 
     	return view('requisicion', compact('fecha', 'productos', 'domicilios'));
+    }
+
+    public function store(Request $request)
+    {
+        $requisicion = Requisicion::guardar($request);
+        Session::flash('mensaje', 'Se ha generado la requisicion con el id '.$requisicion->id);
+        return back();
     }
 
     public function surtido()
